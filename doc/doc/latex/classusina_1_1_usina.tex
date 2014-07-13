@@ -1,0 +1,244 @@
+\hypertarget{classusina_1_1_usina}{\section{Referência da Classe usina.\-Usina}
+\label{classusina_1_1_usina}\index{usina.\-Usina@{usina.\-Usina}}
+}
+
+
+\hyperlink{classusina_1_1_usina}{Usina} hidroelétrica.  
+
+
+
+
+Diagrama de Hierarquia para usina.\-Usina\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classusina_1_1_usina__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para usina.\-Usina\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_usina__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classusina_1_1_usina_a1ce70ad3a7a72cc11292ba73c98939bc}{Usina} (List$<$ \hyperlink{classusina_1_1_turbina}{Turbina} $>$ \hyperlink{classusina_1_1_usina_a5c258abf1e1c8a47c01a25711315352a}{turbinas}, List$<$ \hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} $>$ \hyperlink{classusina_1_1_usina_a417d6a65f366efc44a3c40bb0c64a7e0}{condutos})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+Double \hyperlink{classusina_1_1_usina_ac2d787f27a524fa3d13164fe9124ad06}{avalia} (\hyperlink{classusina_1_1_distribuicao_vazao}{Distribuicao\-Vazao} vazoes)
+\item 
+String \hyperlink{classusina_1_1_usina_aa4d0029a0aa4e29a51598237d66178f3}{to\-String} ()
+\item 
+List$<$ \hyperlink{classusina_1_1_turbina}{Turbina} $>$ \hyperlink{classusina_1_1_usina_a2e456a6c00efcd5c9251f428e55f9a66}{get\-Turbinas} ()
+\begin{DoxyCompactList}\small\item\em Recupera a lista de turbinas que compõem a usina. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} $>$ \hyperlink{classusina_1_1_usina_ae6bb9fe84f617e90aebc64789125903f}{get\-Condutos} ()
+\begin{DoxyCompactList}\small\item\em Recupera a lista de condutos que compõem a usina. \end{DoxyCompactList}\item 
+Double \hyperlink{classusina_1_1_usina_a5c0a5be34924347400f3cf94ab4b7f0f}{get\-Meta} ()
+\begin{DoxyCompactList}\small\item\em Recupera a meta da usina. \end{DoxyCompactList}\item 
+void \hyperlink{classusina_1_1_usina_a8736dc1cbd2a8d5ed7e352dd9d4b5a90}{set\-Meta} (Double \hyperlink{classusina_1_1_usina_a43a57f61ea40c415edd72a9dc8ae997c}{meta})
+\begin{DoxyCompactList}\small\item\em Atribui uma nova meta para as distribuições de vazão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+final List$<$ \hyperlink{classusina_1_1_turbina}{Turbina} $>$ \hyperlink{classusina_1_1_usina_a5c258abf1e1c8a47c01a25711315352a}{turbinas}
+\item 
+final List$<$ \hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} $>$ \hyperlink{classusina_1_1_usina_a417d6a65f366efc44a3c40bb0c64a7e0}{condutos}
+\item 
+Double \hyperlink{classusina_1_1_usina_a43a57f61ea40c415edd72a9dc8ae997c}{meta}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\hyperlink{classusina_1_1_usina}{Usina} hidroelétrica. 
+
+Essa classe compila todas as informações presentes no cálculo da eficiência energética, e mantém de modo controlado as informações estruturais para cada instância, mantendo referências aos condutos e turbinas que a compõem. 
+
+Usinas devem ter todos seus componentes conectados e estruturados de forma que a iteração entre eles seja conhecida. Portanto, as turbinas devem estar instaladas aos condutos, a priori ou após a construção para efetivação dos cálculos. A construção pode ser facilitada pelo uso da classe \hyperlink{}{Usina\-Factory}. 
+
+\begin{DoxyAuthor}{Autor}
+Victor Soares 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{Veja também}
+Usina\-Factory 
+\end{DoxySeeAlso}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classusina_1_1_usina_a1ce70ad3a7a72cc11292ba73c98939bc}{\index{usina\-::\-Usina@{usina\-::\-Usina}!Usina@{Usina}}
+\index{Usina@{Usina}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{Usina}]{\setlength{\rightskip}{0pt plus 5cm}usina.\-Usina.\-Usina (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Turbina} $>$}]{turbinas, }
+\item[{List$<$ {\bf Conduto} $>$}]{condutos}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_a1ce70ad3a7a72cc11292ba73c98939bc}
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em turbinas} & Turbinas da usina. \\
+\hline
+{\em condutos} & Condutos da usina.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Null\-Pointer\-Exception} & 
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}um dos parâmetros for uma referencia nula.  \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Métodos}
+\hypertarget{classusina_1_1_usina_ac2d787f27a524fa3d13164fe9124ad06}{\index{usina\-::\-Usina@{usina\-::\-Usina}!avalia@{avalia}}
+\index{avalia@{avalia}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{avalia}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Usina.\-avalia (
+\begin{DoxyParamCaption}
+\item[{{\bf Distribuicao\-Vazao}}]{vazoes}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_ac2d787f27a524fa3d13164fe9124ad06}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classusina_1_1_usina_ac2d787f27a524fa3d13164fe9124ad06_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_usina_ae6bb9fe84f617e90aebc64789125903f}{\index{usina\-::\-Usina@{usina\-::\-Usina}!get\-Condutos@{get\-Condutos}}
+\index{get\-Condutos@{get\-Condutos}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{get\-Condutos}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Conduto}$>$ usina.\-Usina.\-get\-Condutos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_ae6bb9fe84f617e90aebc64789125903f}
+
+
+Recupera a lista de condutos que compõem a usina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Lista não modificável de condutos. 
+\end{DoxyReturn}
+\hypertarget{classusina_1_1_usina_a5c0a5be34924347400f3cf94ab4b7f0f}{\index{usina\-::\-Usina@{usina\-::\-Usina}!get\-Meta@{get\-Meta}}
+\index{get\-Meta@{get\-Meta}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{get\-Meta}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Usina.\-get\-Meta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_a5c0a5be34924347400f3cf94ab4b7f0f}
+
+
+Recupera a meta da usina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Meta para distribuição de vazão. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classusina_1_1_usina_a5c0a5be34924347400f3cf94ab4b7f0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_usina_a2e456a6c00efcd5c9251f428e55f9a66}{\index{usina\-::\-Usina@{usina\-::\-Usina}!get\-Turbinas@{get\-Turbinas}}
+\index{get\-Turbinas@{get\-Turbinas}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{get\-Turbinas}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Turbina}$>$ usina.\-Usina.\-get\-Turbinas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_a2e456a6c00efcd5c9251f428e55f9a66}
+
+
+Recupera a lista de turbinas que compõem a usina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Lista não modificável de turbinas. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classusina_1_1_usina_a2e456a6c00efcd5c9251f428e55f9a66_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_usina_a8736dc1cbd2a8d5ed7e352dd9d4b5a90}{\index{usina\-::\-Usina@{usina\-::\-Usina}!set\-Meta@{set\-Meta}}
+\index{set\-Meta@{set\-Meta}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{set\-Meta}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Usina.\-set\-Meta (
+\begin{DoxyParamCaption}
+\item[{Double}]{meta}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_a8736dc1cbd2a8d5ed7e352dd9d4b5a90}
+
+
+Atribui uma nova meta para as distribuições de vazão. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em meta} & Meta para distribuição de vazão. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classusina_1_1_usina_aa4d0029a0aa4e29a51598237d66178f3}{\index{usina\-::\-Usina@{usina\-::\-Usina}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String usina.\-Usina.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_usina_aa4d0029a0aa4e29a51598237d66178f3}
+
+
+\subsection{Atributos}
+\hypertarget{classusina_1_1_usina_a417d6a65f366efc44a3c40bb0c64a7e0}{\index{usina\-::\-Usina@{usina\-::\-Usina}!condutos@{condutos}}
+\index{condutos@{condutos}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{condutos}]{\setlength{\rightskip}{0pt plus 5cm}final List$<${\bf Conduto}$>$ usina.\-Usina.\-condutos\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_usina_a417d6a65f366efc44a3c40bb0c64a7e0}
+\hypertarget{classusina_1_1_usina_a43a57f61ea40c415edd72a9dc8ae997c}{\index{usina\-::\-Usina@{usina\-::\-Usina}!meta@{meta}}
+\index{meta@{meta}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{meta}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Usina.\-meta\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_usina_a43a57f61ea40c415edd72a9dc8ae997c}
+\hypertarget{classusina_1_1_usina_a5c258abf1e1c8a47c01a25711315352a}{\index{usina\-::\-Usina@{usina\-::\-Usina}!turbinas@{turbinas}}
+\index{turbinas@{turbinas}!usina::Usina@{usina\-::\-Usina}}
+\subsubsection[{turbinas}]{\setlength{\rightskip}{0pt plus 5cm}final List$<${\bf Turbina}$>$ usina.\-Usina.\-turbinas\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_usina_a5c258abf1e1c8a47c01a25711315352a}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Victor/workplace/\-Net\-Beans\-Projects/tcc/src/usina/\hyperlink{_usina_8java}{Usina.\-java}\end{DoxyCompactItemize}

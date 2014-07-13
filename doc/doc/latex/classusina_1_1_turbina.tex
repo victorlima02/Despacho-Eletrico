@@ -1,0 +1,772 @@
+\hypertarget{classusina_1_1_turbina}{\section{Referência da Classe usina.\-Turbina}
+\label{classusina_1_1_turbina}\index{usina.\-Turbina@{usina.\-Turbina}}
+}
+
+
+Conjunto turbina-\/gerador.  
+
+
+
+
+Diagrama de colaboração para usina.\-Turbina\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classusina_1_1_turbina__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classusina_1_1_turbina_abd3ec63d990bd3598954031d6daffabc}{Turbina} (Double \hyperlink{classusina_1_1_turbina_a9d422881e2943b12a26cb27caf92d08b}{limite\-Min\-De\-Potencia}, Double \hyperlink{classusina_1_1_turbina_ab6648bca34b30eedf9f9246fe7bfde00}{limite\-Max\-De\-Potencia}, Double \hyperlink{classusina_1_1_turbina_a549b44e83d93c34fc79bdeb688c60b7d}{limite\-Min\-De\-Vazao}, Double \hyperlink{classusina_1_1_turbina_a0f961379b5f4e4779f98d15dd093c6ba}{limite\-Max\-De\-Vazao}, Double\mbox{[}$\,$\mbox{]} \hyperlink{classusina_1_1_turbina_a5787dbae79e4108296573fd4dbf156da}{parametros\-Rendimento})
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+final void \hyperlink{classusina_1_1_turbina_af3c11239f2309b85267bdc60580bd9a8}{set\-Limites\-De\-Potencia} (Double \hyperlink{classusina_1_1_turbina_a9d422881e2943b12a26cb27caf92d08b}{limite\-Min\-De\-Potencia}, Double \hyperlink{classusina_1_1_turbina_ab6648bca34b30eedf9f9246fe7bfde00}{limite\-Max\-De\-Potencia})
+\begin{DoxyCompactList}\small\item\em Atribui limites à potência da turbina. \end{DoxyCompactList}\item 
+final void \hyperlink{classusina_1_1_turbina_a7b96c0bc6e3eff9430d79d287645c306}{set\-Limites\-De\-Vazao} (Double \hyperlink{classusina_1_1_turbina_a549b44e83d93c34fc79bdeb688c60b7d}{limite\-Min\-De\-Vazao}, Double \hyperlink{classusina_1_1_turbina_a0f961379b5f4e4779f98d15dd093c6ba}{limite\-Max\-De\-Vazao})
+\begin{DoxyCompactList}\small\item\em Atribui limites à vazão da turbina. \end{DoxyCompactList}\item 
+void \hyperlink{classusina_1_1_turbina_abc98fbb1a34b3d911b791e6a19f9c784}{set\-Parametros\-Rendimento} (Double\mbox{[}$\,$\mbox{]} \hyperlink{classusina_1_1_turbina_a5787dbae79e4108296573fd4dbf156da}{parametros\-Rendimento})
+\begin{DoxyCompactList}\small\item\em Atribui os parâmetros para o calculo do get\-Rendimento. \end{DoxyCompactList}\item 
+final void \hyperlink{classusina_1_1_turbina_ad46569765ed883b27b39096e6e30ffe9}{instala} (Double \hyperlink{classusina_1_1_turbina_a74ca99529c8c56c1ffddba8bc914c442}{queda\-Bruta}, \hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} \hyperlink{classusina_1_1_turbina_aaf9ebcc66e369abbf1ccf644579e1348}{conduto})
+\begin{DoxyCompactList}\small\item\em Instala turbina na usina por meio de um conduto. \end{DoxyCompactList}\item 
+final void \hyperlink{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2}{set\-Ligada} (Boolean \hyperlink{classusina_1_1_turbina_afe4aa27ba1150a9b4a2a7d9ec622ab4f}{ligada})
+\begin{DoxyCompactList}\small\item\em Controla o estado de uma turbina, ligando ou desligando a mesma. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a}{get\-Rendimento} (\hyperlink{classusina_1_1_fluxo}{Fluxo} fluxo)
+\begin{DoxyCompactList}\small\item\em Calcula o rendimento da turbina dado um fluxo. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710}{get\-Potencia} (\hyperlink{classusina_1_1_fluxo}{Fluxo} fluxo)
+\begin{DoxyCompactList}\small\item\em Calcula a potência gerada da turbina dado um fluxo. \end{DoxyCompactList}\item 
+final Boolean \hyperlink{classusina_1_1_turbina_a62d5a81d710e36542ca8a001bf16a3e1}{is\-Ligada} ()
+\begin{DoxyCompactList}\small\item\em Verifica o estado da turbina, ligada/desligada. \end{DoxyCompactList}\item 
+Boolean \hyperlink{classusina_1_1_turbina_aab5ba2c5ccb1f98ea31928d3197f8a88}{is\-Conectada} ()
+\begin{DoxyCompactList}\small\item\em Verifica o estado da turbina, conectada ou desconectada. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_aee3faa93f4d92db651edbea96d1df938}{get\-Limite\-Min\-De\-Potencia} ()
+\begin{DoxyCompactList}\small\item\em Recupera o limite mínimo de potência para operação da turbina. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_ae08079645408277e5f4b34869c8fbdbc}{get\-Limite\-Max\-De\-Potencia} ()
+\begin{DoxyCompactList}\small\item\em Recupera o limite máximo de potência para operação da turbina. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_a62be0e3ac4c6461fc2202b6b97cbf8ec}{get\-Limite\-Min\-De\-Vazao} ()
+\begin{DoxyCompactList}\small\item\em Recupera o limite mínimo de vazão para operação da turbina. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_aa13d59b00e57632fcfc9db6f651d4a9d}{get\-Limite\-Max\-De\-Vazao} ()
+\begin{DoxyCompactList}\small\item\em Recupera o limite máximo de vazão para operação da turbina. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_turbina_aa31333043136ac0d431d3347099e268e}{get\-Queda\-Bruta} ()
+\begin{DoxyCompactList}\small\item\em Recupera a queda bruta, definida na instalação. \end{DoxyCompactList}\item 
+String \hyperlink{classusina_1_1_turbina_af0070ee6333afe97856a58e309e72064}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classusina_1_1_turbina_a373df75de3c1226b0d518254ae3831bf}{set\-Queda\-Bruta} (Double \hyperlink{classusina_1_1_turbina_a74ca99529c8c56c1ffddba8bc914c442}{queda\-Bruta})
+\begin{DoxyCompactList}\small\item\em Define a queda bruta no momento da instalação. \end{DoxyCompactList}\item 
+void \hyperlink{classusina_1_1_turbina_a15f7eae41d56f2cbb7a271a3af549350}{conecta\-Conduto} (\hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} \hyperlink{classusina_1_1_turbina_aaf9ebcc66e369abbf1ccf644579e1348}{conduto})
+\begin{DoxyCompactList}\small\item\em Conecta a turbina a um conduto no momento da instalação. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Double \hyperlink{classusina_1_1_turbina_a9d422881e2943b12a26cb27caf92d08b}{limite\-Min\-De\-Potencia}
+\item 
+Double \hyperlink{classusina_1_1_turbina_ab6648bca34b30eedf9f9246fe7bfde00}{limite\-Max\-De\-Potencia}
+\item 
+Double \hyperlink{classusina_1_1_turbina_a549b44e83d93c34fc79bdeb688c60b7d}{limite\-Min\-De\-Vazao}
+\item 
+Double \hyperlink{classusina_1_1_turbina_a0f961379b5f4e4779f98d15dd093c6ba}{limite\-Max\-De\-Vazao}
+\item 
+Double\mbox{[}$\,$\mbox{]} \hyperlink{classusina_1_1_turbina_a5787dbae79e4108296573fd4dbf156da}{parametros\-Rendimento}
+\item 
+Boolean \hyperlink{classusina_1_1_turbina_afe4aa27ba1150a9b4a2a7d9ec622ab4f}{ligada}
+\item 
+Double \hyperlink{classusina_1_1_turbina_a74ca99529c8c56c1ffddba8bc914c442}{queda\-Bruta}
+\item 
+\hyperlink{classusina_1_1tubulacao_1_1_conduto}{Conduto} \hyperlink{classusina_1_1_turbina_aaf9ebcc66e369abbf1ccf644579e1348}{conduto}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Conjunto turbina-\/gerador. 
+
+Classe representante dos conjuntos geradores no problema de despacho elétrico. 
+
+Usa-\/se, aqui, por simplicidade, os substantivos turbina e conjunto-\/gerador como sinônimos. Uma divisão mais detalhada seria desnecessária, pois o modelo atual trata da eficiência do conjunto. 
+
+\begin{DoxyAuthor}{Autor}
+Victor de Lima Soares 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classusina_1_1_turbina_abd3ec63d990bd3598954031d6daffabc}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!Turbina@{Turbina}}
+\index{Turbina@{Turbina}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{Turbina}]{\setlength{\rightskip}{0pt plus 5cm}usina.\-Turbina.\-Turbina (
+\begin{DoxyParamCaption}
+\item[{Double}]{limite\-Min\-De\-Potencia, }
+\item[{Double}]{limite\-Max\-De\-Potencia, }
+\item[{Double}]{limite\-Min\-De\-Vazao, }
+\item[{Double}]{limite\-Max\-De\-Vazao, }
+\item[{Double\mbox{[}$\,$\mbox{]}}]{parametros\-Rendimento}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_abd3ec63d990bd3598954031d6daffabc}
+
+
+Construtor. 
+
+Por padrão uma turbina é instanciada como desligada e desconectada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em limite\-Min\-De\-Potencia} & Limite inferior para potência, inclusive. \\
+\hline
+{\em limite\-Max\-De\-Potencia} & Limite superior para potência, exclusive. \\
+\hline
+{\em limite\-Min\-De\-Vazao} & Limite inferior para vazão, inclusive. \\
+\hline
+{\em limite\-Max\-De\-Vazao} & Limite superior para vazão, exclusive. \\
+\hline
+{\em parametros\-Rendimento} & Parâmetros para calculo do get\-Rendimento.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a}{get\-Rendimento}(\hyperlink{classusina_1_1_fluxo}{usina.\-Fluxo}) 
+
+\hyperlink{classusina_1_1_turbina_ad46569765ed883b27b39096e6e30ffe9}{instala}(java.\-lang.\-Double, \hyperlink{classusina_1_1tubulacao_1_1_conduto}{usina.\-tubulacao.\-Conduto}) 
+
+\hyperlink{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2}{set\-Ligada}(java.\-lang.\-Boolean) 
+\end{DoxySeeAlso}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_abd3ec63d990bd3598954031d6daffabc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Métodos}
+\hypertarget{classusina_1_1_turbina_a15f7eae41d56f2cbb7a271a3af549350}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!conecta\-Conduto@{conecta\-Conduto}}
+\index{conecta\-Conduto@{conecta\-Conduto}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{conecta\-Conduto}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Turbina.\-conecta\-Conduto (
+\begin{DoxyParamCaption}
+\item[{{\bf Conduto}}]{conduto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a15f7eae41d56f2cbb7a271a3af549350}
+
+
+Conecta a turbina a um conduto no momento da instalação. 
+
+{\bfseries Não pode ser usada mais de uma vez.} 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em conduto} & Conduto onde a turbina será instalada. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-State\-Exception} & 
+\begin{DoxyItemize}
+\item Se a turbina já estiver conectada a outro conduto. 
+\end{DoxyItemize}\\
+\hline
+{\em Null\-Pointer\-Exception} & 
+\begin{DoxyItemize}
+\item Se a referência para o conduto for nula. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_a15f7eae41d56f2cbb7a271a3af549350_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_a15f7eae41d56f2cbb7a271a3af549350_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_ae08079645408277e5f4b34869c8fbdbc}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Limite\-Max\-De\-Potencia@{get\-Limite\-Max\-De\-Potencia}}
+\index{get\-Limite\-Max\-De\-Potencia@{get\-Limite\-Max\-De\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Limite\-Max\-De\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Limite\-Max\-De\-Potencia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_ae08079645408277e5f4b34869c8fbdbc}
+
+
+Recupera o limite máximo de potência para operação da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Limite máximo de potência. 
+\end{DoxyReturn}
+\hypertarget{classusina_1_1_turbina_aa13d59b00e57632fcfc9db6f651d4a9d}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Limite\-Max\-De\-Vazao@{get\-Limite\-Max\-De\-Vazao}}
+\index{get\-Limite\-Max\-De\-Vazao@{get\-Limite\-Max\-De\-Vazao}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Limite\-Max\-De\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Limite\-Max\-De\-Vazao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_aa13d59b00e57632fcfc9db6f651d4a9d}
+
+
+Recupera o limite máximo de vazão para operação da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Limite máximo de vazão. 
+\end{DoxyReturn}
+\hypertarget{classusina_1_1_turbina_aee3faa93f4d92db651edbea96d1df938}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Limite\-Min\-De\-Potencia@{get\-Limite\-Min\-De\-Potencia}}
+\index{get\-Limite\-Min\-De\-Potencia@{get\-Limite\-Min\-De\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Limite\-Min\-De\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Limite\-Min\-De\-Potencia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_aee3faa93f4d92db651edbea96d1df938}
+
+
+Recupera o limite mínimo de potência para operação da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Limite mínimo de potência. 
+\end{DoxyReturn}
+\hypertarget{classusina_1_1_turbina_a62be0e3ac4c6461fc2202b6b97cbf8ec}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Limite\-Min\-De\-Vazao@{get\-Limite\-Min\-De\-Vazao}}
+\index{get\-Limite\-Min\-De\-Vazao@{get\-Limite\-Min\-De\-Vazao}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Limite\-Min\-De\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Limite\-Min\-De\-Vazao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_a62be0e3ac4c6461fc2202b6b97cbf8ec}
+
+
+Recupera o limite mínimo de vazão para operação da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Limite mínimo de vazão. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_a62be0e3ac4c6461fc2202b6b97cbf8ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Potencia@{get\-Potencia}}
+\index{get\-Potencia@{get\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Potencia (
+\begin{DoxyParamCaption}
+\item[{{\bf Fluxo}}]{fluxo}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710}
+
+
+Calcula a potência gerada da turbina dado um fluxo. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em fluxo} & \hyperlink{classusina_1_1_fluxo}{Fluxo} de parametrização. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Potência da turbina. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_aa31333043136ac0d431d3347099e268e}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Queda\-Bruta@{get\-Queda\-Bruta}}
+\index{get\-Queda\-Bruta@{get\-Queda\-Bruta}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Queda\-Bruta}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Queda\-Bruta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_aa31333043136ac0d431d3347099e268e}
+
+
+Recupera a queda bruta, definida na instalação. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+A queda bruta. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_aa31333043136ac0d431d3347099e268e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!get\-Rendimento@{get\-Rendimento}}
+\index{get\-Rendimento@{get\-Rendimento}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{get\-Rendimento}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Turbina.\-get\-Rendimento (
+\begin{DoxyParamCaption}
+\item[{{\bf Fluxo}}]{fluxo}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a}
+
+
+Calcula o rendimento da turbina dado um fluxo. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em fluxo} & \hyperlink{classusina_1_1_fluxo}{Fluxo} de parametrização. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Rendimento da turbina. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_ad46569765ed883b27b39096e6e30ffe9}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!instala@{instala}}
+\index{instala@{instala}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{instala}]{\setlength{\rightskip}{0pt plus 5cm}final void usina.\-Turbina.\-instala (
+\begin{DoxyParamCaption}
+\item[{Double}]{queda\-Bruta, }
+\item[{{\bf Conduto}}]{conduto}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_ad46569765ed883b27b39096e6e30ffe9}
+
+
+Instala turbina na usina por meio de um conduto. 
+
+{\bfseries Não pode ser usada mais de uma vez.} 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em queda\-Bruta} & A queda bruta na operação da turbina. \\
+\hline
+{\em conduto} & Conduto onde a turbina será instalada.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-Argument\-Exception} & 
+\begin{DoxyItemize}
+\item Se a queda bruta for menor que zero. 
+\end{DoxyItemize}\\
+\hline
+{\em Illegal\-State\-Exception} & 
+\begin{DoxyItemize}
+\item Se a função for usada mais de uma vez; 
+\item Se a turbina já estiver conectada a outro conduto. 
+\end{DoxyItemize}\\
+\hline
+{\em Null\-Pointer\-Exception} & 
+\begin{DoxyItemize}
+\item Se a referência para o conduto for nula. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_ad46569765ed883b27b39096e6e30ffe9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_aab5ba2c5ccb1f98ea31928d3197f8a88}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!is\-Conectada@{is\-Conectada}}
+\index{is\-Conectada@{is\-Conectada}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{is\-Conectada}]{\setlength{\rightskip}{0pt plus 5cm}Boolean usina.\-Turbina.\-is\-Conectada (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_aab5ba2c5ccb1f98ea31928d3197f8a88}
+
+
+Verifica o estado da turbina, conectada ou desconectada. 
+
+\begin{DoxyReturn}{Retorna}
+Estado da turbina\-: 
+\begin{DoxyItemize}
+\item True\-: conectada. 
+\item False\-: desconectada. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_aab5ba2c5ccb1f98ea31928d3197f8a88_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_a62d5a81d710e36542ca8a001bf16a3e1}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!is\-Ligada@{is\-Ligada}}
+\index{is\-Ligada@{is\-Ligada}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{is\-Ligada}]{\setlength{\rightskip}{0pt plus 5cm}final Boolean usina.\-Turbina.\-is\-Ligada (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_a62d5a81d710e36542ca8a001bf16a3e1}
+
+
+Verifica o estado da turbina, ligada/desligada. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Estado da turbina\-: 
+\begin{DoxyItemize}
+\item True\-: Ligada. 
+\item False\-: Desligada. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classusina_1_1_turbina_a62d5a81d710e36542ca8a001bf16a3e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!set\-Ligada@{set\-Ligada}}
+\index{set\-Ligada@{set\-Ligada}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{set\-Ligada}]{\setlength{\rightskip}{0pt plus 5cm}final void usina.\-Turbina.\-set\-Ligada (
+\begin{DoxyParamCaption}
+\item[{Boolean}]{ligada}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2}
+
+
+Controla o estado de uma turbina, ligando ou desligando a mesma. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em ligada} & Estado da turbina\-: ligado/desligado; 
+\begin{DoxyItemize}
+\item True\-: Liga turbina. 
+\item False\-: Desliga turbina. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-State\-Exception} & 
+\begin{DoxyItemize}
+\item Se a turbina não estiver instalada. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classusina_1_1_turbina_aef2a44bda149b3bd9afd627145b53df2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_af3c11239f2309b85267bdc60580bd9a8}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!set\-Limites\-De\-Potencia@{set\-Limites\-De\-Potencia}}
+\index{set\-Limites\-De\-Potencia@{set\-Limites\-De\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{set\-Limites\-De\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}final void usina.\-Turbina.\-set\-Limites\-De\-Potencia (
+\begin{DoxyParamCaption}
+\item[{Double}]{limite\-Min\-De\-Potencia, }
+\item[{Double}]{limite\-Max\-De\-Potencia}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_af3c11239f2309b85267bdc60580bd9a8}
+
+
+Atribui limites à potência da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em limite\-Min\-De\-Potencia} & Limite mínimo de potência para operação da turbina. \\
+\hline
+{\em limite\-Max\-De\-Potencia} & Limite máximo de potência para operação da turbina. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-Argument\-Exception} & 
+\begin{DoxyItemize}
+\item Se o limite mínimo for menor que zero; 
+\item Se o limite máximo for menor ou igual a zero; 
+\item Se o limite máximo for menor que o limite mínimo. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_af3c11239f2309b85267bdc60580bd9a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_a7b96c0bc6e3eff9430d79d287645c306}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!set\-Limites\-De\-Vazao@{set\-Limites\-De\-Vazao}}
+\index{set\-Limites\-De\-Vazao@{set\-Limites\-De\-Vazao}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{set\-Limites\-De\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}final void usina.\-Turbina.\-set\-Limites\-De\-Vazao (
+\begin{DoxyParamCaption}
+\item[{Double}]{limite\-Min\-De\-Vazao, }
+\item[{Double}]{limite\-Max\-De\-Vazao}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_a7b96c0bc6e3eff9430d79d287645c306}
+
+
+Atribui limites à vazão da turbina. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em limite\-Min\-De\-Vazao} & Limite mínimo de vazão para operação da turbina. \\
+\hline
+{\em limite\-Max\-De\-Vazao} & Limite máximo de vazão para operação da turbina. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-Argument\-Exception} & 
+\begin{DoxyItemize}
+\item Se o limite mínimo for menor que zero; 
+\item Se o limite máximo for menor ou igual a zero; 
+\item Se o limite máximo for menor que o limite mínimo. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_a7b96c0bc6e3eff9430d79d287645c306_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_abc98fbb1a34b3d911b791e6a19f9c784}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!set\-Parametros\-Rendimento@{set\-Parametros\-Rendimento}}
+\index{set\-Parametros\-Rendimento@{set\-Parametros\-Rendimento}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{set\-Parametros\-Rendimento}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Turbina.\-set\-Parametros\-Rendimento (
+\begin{DoxyParamCaption}
+\item[{Double\mbox{[}$\,$\mbox{]}}]{parametros\-Rendimento}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_abc98fbb1a34b3d911b791e6a19f9c784}
+
+
+Atribui os parâmetros para o calculo do get\-Rendimento. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em parametros\-Rendimento} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{classusina_1_1_turbina_ad7eb2929acee76d69ef06d67c01d0e1a}{get\-Rendimento}(\hyperlink{classusina_1_1_fluxo}{usina.\-Fluxo}) 
+\end{DoxySeeAlso}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_abc98fbb1a34b3d911b791e6a19f9c784_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_a373df75de3c1226b0d518254ae3831bf}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!set\-Queda\-Bruta@{set\-Queda\-Bruta}}
+\index{set\-Queda\-Bruta@{set\-Queda\-Bruta}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{set\-Queda\-Bruta}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Turbina.\-set\-Queda\-Bruta (
+\begin{DoxyParamCaption}
+\item[{Double}]{queda\-Bruta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a373df75de3c1226b0d518254ae3831bf}
+
+
+Define a queda bruta no momento da instalação. 
+
+{\bfseries Não pode ser usada mais de uma vez.} 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em queda\-Bruta} & A queda bruta na operação da turbina.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-Argument\-Exception} & 
+\begin{DoxyItemize}
+\item Se a queda bruta for menor que zero. 
+\end{DoxyItemize}\\
+\hline
+{\em Illegal\-State\-Exception} & 
+\begin{DoxyItemize}
+\item Se a função for usada mais de uma vez. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_turbina_a373df75de3c1226b0d518254ae3831bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_turbina_af0070ee6333afe97856a58e309e72064}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String usina.\-Turbina.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_turbina_af0070ee6333afe97856a58e309e72064}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classusina_1_1_turbina_af0070ee6333afe97856a58e309e72064_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Atributos}
+\hypertarget{classusina_1_1_turbina_aaf9ebcc66e369abbf1ccf644579e1348}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!conduto@{conduto}}
+\index{conduto@{conduto}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{conduto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conduto} usina.\-Turbina.\-conduto\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_aaf9ebcc66e369abbf1ccf644579e1348}
+\hypertarget{classusina_1_1_turbina_afe4aa27ba1150a9b4a2a7d9ec622ab4f}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!ligada@{ligada}}
+\index{ligada@{ligada}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{ligada}]{\setlength{\rightskip}{0pt plus 5cm}Boolean usina.\-Turbina.\-ligada\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_afe4aa27ba1150a9b4a2a7d9ec622ab4f}
+\hypertarget{classusina_1_1_turbina_ab6648bca34b30eedf9f9246fe7bfde00}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!limite\-Max\-De\-Potencia@{limite\-Max\-De\-Potencia}}
+\index{limite\-Max\-De\-Potencia@{limite\-Max\-De\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{limite\-Max\-De\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Turbina.\-limite\-Max\-De\-Potencia\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_ab6648bca34b30eedf9f9246fe7bfde00}
+\hypertarget{classusina_1_1_turbina_a0f961379b5f4e4779f98d15dd093c6ba}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!limite\-Max\-De\-Vazao@{limite\-Max\-De\-Vazao}}
+\index{limite\-Max\-De\-Vazao@{limite\-Max\-De\-Vazao}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{limite\-Max\-De\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Turbina.\-limite\-Max\-De\-Vazao\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a0f961379b5f4e4779f98d15dd093c6ba}
+\hypertarget{classusina_1_1_turbina_a9d422881e2943b12a26cb27caf92d08b}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!limite\-Min\-De\-Potencia@{limite\-Min\-De\-Potencia}}
+\index{limite\-Min\-De\-Potencia@{limite\-Min\-De\-Potencia}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{limite\-Min\-De\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Turbina.\-limite\-Min\-De\-Potencia\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a9d422881e2943b12a26cb27caf92d08b}
+\hypertarget{classusina_1_1_turbina_a549b44e83d93c34fc79bdeb688c60b7d}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!limite\-Min\-De\-Vazao@{limite\-Min\-De\-Vazao}}
+\index{limite\-Min\-De\-Vazao@{limite\-Min\-De\-Vazao}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{limite\-Min\-De\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Turbina.\-limite\-Min\-De\-Vazao\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a549b44e83d93c34fc79bdeb688c60b7d}
+\hypertarget{classusina_1_1_turbina_a5787dbae79e4108296573fd4dbf156da}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!parametros\-Rendimento@{parametros\-Rendimento}}
+\index{parametros\-Rendimento@{parametros\-Rendimento}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{parametros\-Rendimento}]{\setlength{\rightskip}{0pt plus 5cm}Double \mbox{[}$\,$\mbox{]} usina.\-Turbina.\-parametros\-Rendimento\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a5787dbae79e4108296573fd4dbf156da}
+\hypertarget{classusina_1_1_turbina_a74ca99529c8c56c1ffddba8bc914c442}{\index{usina\-::\-Turbina@{usina\-::\-Turbina}!queda\-Bruta@{queda\-Bruta}}
+\index{queda\-Bruta@{queda\-Bruta}!usina::Turbina@{usina\-::\-Turbina}}
+\subsubsection[{queda\-Bruta}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Turbina.\-queda\-Bruta\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_turbina_a74ca99529c8c56c1ffddba8bc914c442}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Victor/workplace/\-Net\-Beans\-Projects/tcc/src/usina/\hyperlink{_turbina_8java}{Turbina.\-java}\end{DoxyCompactItemize}

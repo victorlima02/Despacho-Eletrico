@@ -1,0 +1,4 @@
+<map id="usina.Fluxo" name="usina.Fluxo">
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html" title="Conjunto turbina&#45;gerador. " alt="" coords="141,5,336,347"/>
+<area shape="rect" id="node4" href="$classusina_1_1tubulacao_1_1_conduto.html" title="{usina.tubulacao.Conduto\n||+ Conduto()\l+ Conduto()\l+ conectaTurbina()\l+ isConectado()\l+ adicianaTubo()\l+ getPerdaHidraulica()\l}" alt="" coords="245,455,411,606"/>
+</map>

@@ -1,0 +1,466 @@
+\hypertarget{classusina_1_1_fluxo}{\section{Referência da Classe usina.\-Fluxo}
+\label{classusina_1_1_fluxo}\index{usina.\-Fluxo@{usina.\-Fluxo}}
+}
+
+
+\hyperlink{classusina_1_1_fluxo}{Fluxo}.  
+
+
+
+
+Diagrama de Hierarquia para usina.\-Fluxo\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classusina_1_1_fluxo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para usina.\-Fluxo\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141}{Fluxo} (Double vazao, \hyperlink{classusina_1_1_turbina}{Turbina} turbina)
+\begin{DoxyCompactList}\small\item\em Construtor com Reynolds padrão. \end{DoxyCompactList}\item 
+\hyperlink{classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9}{Fluxo} (Double vazao, Double \hyperlink{classusina_1_1_fluxo_a185fed046eefce4fa8f8bb10fde8296d}{reynolds}, \hyperlink{classusina_1_1_turbina}{Turbina} turbina)
+\begin{DoxyCompactList}\small\item\em Construtor detalhado. \end{DoxyCompactList}\item 
+final void \hyperlink{classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a}{set\-Vazao} (Double vazao)
+\begin{DoxyCompactList}\small\item\em Atribui um novo valor de vazão ao fluxo. \end{DoxyCompactList}\item 
+final double \hyperlink{classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5}{get\-Vazao} ()
+\begin{DoxyCompactList}\small\item\em Recupera o valor da vazão do fluxo. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21}{get\-Reynolds} ()
+\begin{DoxyCompactList}\small\item\em Recupera o número de Reynolds usado. \end{DoxyCompactList}\item 
+final \hyperlink{classusina_1_1_turbina}{Turbina} \hyperlink{classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d}{get\-Turbina\-Referencia} ()
+\begin{DoxyCompactList}\small\item\em Recupera a turbina da referência. \end{DoxyCompactList}\item 
+final Double \hyperlink{classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5}{get\-Potencia} ()
+\begin{DoxyCompactList}\small\item\em Retorna a potência gerada pelo fluxo na turbina. \end{DoxyCompactList}\item 
+final \hyperlink{classusina_1_1_fluxo}{Fluxo} \hyperlink{classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564}{copia} ()
+\item 
+String \hyperlink{classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos Estáticos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+static final Double \hyperlink{classusina_1_1_fluxo_ad85aeeb220a6c87764d29ce36bb8cc26}{R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O} = 70000.\-0
+\end{DoxyCompactItemize}
+\subsection*{Métodos Privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classusina_1_1_fluxo_a1c204862a651d75929b078355b512823}{set\-Reynolds} (Double \hyperlink{classusina_1_1_fluxo_a185fed046eefce4fa8f8bb10fde8296d}{reynolds})
+\begin{DoxyCompactList}\small\item\em Atribui um número de Reynolds ao fluxo. \end{DoxyCompactList}\item 
+void \hyperlink{classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f}{set\-Turbina} (\hyperlink{classusina_1_1_turbina}{Turbina} \hyperlink{classusina_1_1_fluxo_aee04932f02b1bfad1bf79cc80a1df203}{turbina\-Referencia})
+\begin{DoxyCompactList}\small\item\em Atribui uma turbina de referência ao fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Double \hyperlink{classusina_1_1_fluxo_a185fed046eefce4fa8f8bb10fde8296d}{reynolds}
+\item 
+\hyperlink{classusina_1_1_turbina}{Turbina} \hyperlink{classusina_1_1_fluxo_aee04932f02b1bfad1bf79cc80a1df203}{turbina\-Referencia}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\hyperlink{classusina_1_1_fluxo}{Fluxo}. 
+
+Essa classe representa uma abstração do conceito de fluxo, armazenado em si o valor de uma vazão, seu número de Reynolds e a turbina que o contém,enquanto, permitindo a manipulação dos dados referentes a vazão de modo seguro -\/ respeitando os limites impostos pela turbina. 
+
+Objetos da classe {\ttfamily \hyperlink{classusina_1_1_fluxo}{Fluxo}} indicarão a qual gerador pertencem, compondo facilmente distribuições de fluxo, sem necessidade de que objetos da classe {\ttfamily \hyperlink{classusina_1_1_turbina}{Turbina}} sejam criados mais de uma vez em uma usina. 
+
+Adicionalmente, referências indicando a turbina a qual se refere o fluxo são usadas para verificação dos intervalos de entrada, vazão, ditados pela capacidade de cada turbina. 
+
+A classe estende a a classe {\ttfamily Locus\-Real}, o que a torna passível de utilização em algoritmos evolucionários como característica de um ser baseado em valores reais. 
+
+\begin{DoxyAuthor}{Autor}
+Victor Soares 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{Veja também}
+Ser\-Real 
+
+Locus\-Real 
+\end{DoxySeeAlso}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!Fluxo@{Fluxo}}
+\index{Fluxo@{Fluxo}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{Fluxo}]{\setlength{\rightskip}{0pt plus 5cm}usina.\-Fluxo.\-Fluxo (
+\begin{DoxyParamCaption}
+\item[{Double}]{vazao, }
+\item[{{\bf Turbina}}]{turbina}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141}
+
+
+Construtor com Reynolds padrão. 
+
+Reynolds padrão\-: 70000. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em vazao} & Valor da vazão. \\
+\hline
+{\em turbina} & \hyperlink{classusina_1_1_turbina}{Turbina} de referência. \\
+\hline
+\end{DoxyParams}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!Fluxo@{Fluxo}}
+\index{Fluxo@{Fluxo}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{Fluxo}]{\setlength{\rightskip}{0pt plus 5cm}usina.\-Fluxo.\-Fluxo (
+\begin{DoxyParamCaption}
+\item[{Double}]{vazao, }
+\item[{Double}]{reynolds, }
+\item[{{\bf Turbina}}]{turbina}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9}
+
+
+Construtor detalhado. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em vazao} & Valor da vazão. \\
+\hline
+{\em reynolds} & Número de Reynolds. \\
+\hline
+{\em turbina} & \hyperlink{classusina_1_1_turbina}{Turbina} de referência. \\
+\hline
+\end{DoxyParams}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Métodos}
+\hypertarget{classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!copia@{copia}}
+\index{copia@{copia}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{copia}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Fluxo} usina.\-Fluxo.\-copia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!get\-Potencia@{get\-Potencia}}
+\index{get\-Potencia@{get\-Potencia}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{get\-Potencia}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Fluxo.\-get\-Potencia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5}
+
+
+Retorna a potência gerada pelo fluxo na turbina. 
+
+Método de atalho para \hyperlink{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710}{Turbina\#get\-Potencia(usina.\-Fluxo)}, tendo esse fluxo como parâmetro. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Potência da turbina. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{classusina_1_1_turbina_ab5f2692c54cf1e3fe6b30adc3b481710}{Turbina\-::get\-Potencia}(\hyperlink{classusina_1_1_fluxo}{usina.\-Fluxo}) 
+\end{DoxySeeAlso}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!get\-Reynolds@{get\-Reynolds}}
+\index{get\-Reynolds@{get\-Reynolds}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{get\-Reynolds}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Fluxo.\-get\-Reynolds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21}
+
+
+Recupera o número de Reynolds usado. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+O número de Reynolds. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!get\-Turbina\-Referencia@{get\-Turbina\-Referencia}}
+\index{get\-Turbina\-Referencia@{get\-Turbina\-Referencia}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{get\-Turbina\-Referencia}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Turbina} usina.\-Fluxo.\-get\-Turbina\-Referencia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d}
+
+
+Recupera a turbina da referência. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+A turbina de Referencia 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!get\-Vazao@{get\-Vazao}}
+\index{get\-Vazao@{get\-Vazao}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{get\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}final double usina.\-Fluxo.\-get\-Vazao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5}
+
+
+Recupera o valor da vazão do fluxo. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Valor da vazão. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a1c204862a651d75929b078355b512823}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!set\-Reynolds@{set\-Reynolds}}
+\index{set\-Reynolds@{set\-Reynolds}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{set\-Reynolds}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Fluxo.\-set\-Reynolds (
+\begin{DoxyParamCaption}
+\item[{Double}]{reynolds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_fluxo_a1c204862a651d75929b078355b512823}
+
+
+Atribui um número de Reynolds ao fluxo. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+O Coeficiente de Reynolds. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_a1c204862a651d75929b078355b512823_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!set\-Turbina@{set\-Turbina}}
+\index{set\-Turbina@{set\-Turbina}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{set\-Turbina}]{\setlength{\rightskip}{0pt plus 5cm}void usina.\-Fluxo.\-set\-Turbina (
+\begin{DoxyParamCaption}
+\item[{{\bf Turbina}}]{turbina\-Referencia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f}
+
+
+Atribui uma turbina de referência ao fluxo. 
+
+Não deve ser publica, pois o fluxo é semanticamente relacionado a uma turbina. Adicionalmente, essa função não modifica os limites do locus – criados na construção do objeto e não modificáveis. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em turbina\-Referencia} & A turbina de referência. \\
+\hline
+\end{DoxyParams}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!set\-Vazao@{set\-Vazao}}
+\index{set\-Vazao@{set\-Vazao}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{set\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}final void usina.\-Fluxo.\-set\-Vazao (
+\begin{DoxyParamCaption}
+\item[{Double}]{vazao}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a}
+
+
+Atribui um novo valor de vazão ao fluxo. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parâmetros}
+{\em vazao} & Nova vazão.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em Illegal\-Argument\-Exception} & 
+\begin{DoxyItemize}
+\item Se o valor estiver fora dos limites -\/ impostos pela turbina.  
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Veja também}
+Locus\-Real\-::set\-Locus(java.\-lang.\-Double) 
+\end{DoxySeeAlso}
+
+
+Este é o diagrama das funções que utilizam esta função\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String usina.\-Fluxo.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Atributos}
+\hypertarget{classusina_1_1_fluxo_a185fed046eefce4fa8f8bb10fde8296d}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!reynolds@{reynolds}}
+\index{reynolds@{reynolds}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{reynolds}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Fluxo.\-reynolds\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_fluxo_a185fed046eefce4fa8f8bb10fde8296d}
+\hypertarget{classusina_1_1_fluxo_ad85aeeb220a6c87764d29ce36bb8cc26}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O@{R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O}}
+\index{R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O@{R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O}]{\setlength{\rightskip}{0pt plus 5cm}final Double usina.\-Fluxo.\-R\-E\-Y\-N\-O\-L\-D\-S\-\_\-\-P\-A\-D\-R\-A\-O = 70000.\-0\hspace{0.3cm}{\ttfamily [static]}}}\label{classusina_1_1_fluxo_ad85aeeb220a6c87764d29ce36bb8cc26}
+\hypertarget{classusina_1_1_fluxo_aee04932f02b1bfad1bf79cc80a1df203}{\index{usina\-::\-Fluxo@{usina\-::\-Fluxo}!turbina\-Referencia@{turbina\-Referencia}}
+\index{turbina\-Referencia@{turbina\-Referencia}!usina::Fluxo@{usina\-::\-Fluxo}}
+\subsubsection[{turbina\-Referencia}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Turbina} usina.\-Fluxo.\-turbina\-Referencia\hspace{0.3cm}{\ttfamily [private]}}}\label{classusina_1_1_fluxo_aee04932f02b1bfad1bf79cc80a1df203}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Victor/workplace/\-Net\-Beans\-Projects/tcc/src/usina/\hyperlink{_fluxo_8java}{Fluxo.\-java}\end{DoxyCompactItemize}

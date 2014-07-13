@@ -1,0 +1,152 @@
+\hypertarget{classusina_1_1_distribuicao_vazao}{\section{Referência da Classe usina.\-Distribuicao\-Vazao}
+\label{classusina_1_1_distribuicao_vazao}\index{usina.\-Distribuicao\-Vazao@{usina.\-Distribuicao\-Vazao}}
+}
+
+
+Distribuição de vazão.  
+
+
+
+
+Diagrama de Hierarquia para usina.\-Distribuicao\-Vazao\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classusina_1_1_distribuicao_vazao__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para usina.\-Distribuicao\-Vazao\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classusina_1_1_distribuicao_vazao__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classusina_1_1_distribuicao_vazao_ac0e92594534527991f4f00240732e6a5}{Distribuicao\-Vazao} (Integer n\-Vazoes)
+\item 
+Double \hyperlink{classusina_1_1_distribuicao_vazao_afe121af5937973e50d18126a60293771}{get\-Potencia\-Total} ()
+\begin{DoxyCompactList}\small\item\em Retorna a soma das potências geradas pelas turbinas. \end{DoxyCompactList}\item 
+Double \hyperlink{classusina_1_1_distribuicao_vazao_ad34a5a0175ac8ed7c2fffc57b2fb325e}{get\-Vazao\-Total} ()
+\begin{DoxyCompactList}\small\item\em Retorna a soma das vazões geradas pelas turbinas. \end{DoxyCompactList}\item 
+String \hyperlink{classusina_1_1_distribuicao_vazao_a3fe3a91243c236757535a001afaf2aa3}{to\-String\-Detalhado} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Distribuição de vazão. 
+
+Essa classe representa a distribuição de vazão entre os conjuntos turbinas que compõem o sistema, sendo portanto o alvo dos algoritmos evolucionários que tratam do problema do despacho elétrico. 
+
+Cada distribuição agrupa em si um conjunto de características reais, que representam uma vazão para uma determinada turbina. 
+
+\begin{DoxyAuthor}{Autor}
+Victor de Lima Soares
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{Veja também}
+Ser\-Real 
+\end{DoxySeeAlso}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classusina_1_1_distribuicao_vazao_ac0e92594534527991f4f00240732e6a5}{\index{usina\-::\-Distribuicao\-Vazao@{usina\-::\-Distribuicao\-Vazao}!Distribuicao\-Vazao@{Distribuicao\-Vazao}}
+\index{Distribuicao\-Vazao@{Distribuicao\-Vazao}!usina::DistribuicaoVazao@{usina\-::\-Distribuicao\-Vazao}}
+\subsubsection[{Distribuicao\-Vazao}]{\setlength{\rightskip}{0pt plus 5cm}usina.\-Distribuicao\-Vazao.\-Distribuicao\-Vazao (
+\begin{DoxyParamCaption}
+\item[{Integer}]{n\-Vazoes}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_distribuicao_vazao_ac0e92594534527991f4f00240732e6a5}
+
+
+\subsection{Métodos}
+\hypertarget{classusina_1_1_distribuicao_vazao_afe121af5937973e50d18126a60293771}{\index{usina\-::\-Distribuicao\-Vazao@{usina\-::\-Distribuicao\-Vazao}!get\-Potencia\-Total@{get\-Potencia\-Total}}
+\index{get\-Potencia\-Total@{get\-Potencia\-Total}!usina::DistribuicaoVazao@{usina\-::\-Distribuicao\-Vazao}}
+\subsubsection[{get\-Potencia\-Total}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Distribuicao\-Vazao.\-get\-Potencia\-Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_distribuicao_vazao_afe121af5937973e50d18126a60293771}
+
+
+Retorna a soma das potências geradas pelas turbinas. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Potência total. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_distribuicao_vazao_afe121af5937973e50d18126a60293771_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_distribuicao_vazao_ad34a5a0175ac8ed7c2fffc57b2fb325e}{\index{usina\-::\-Distribuicao\-Vazao@{usina\-::\-Distribuicao\-Vazao}!get\-Vazao\-Total@{get\-Vazao\-Total}}
+\index{get\-Vazao\-Total@{get\-Vazao\-Total}!usina::DistribuicaoVazao@{usina\-::\-Distribuicao\-Vazao}}
+\subsubsection[{get\-Vazao\-Total}]{\setlength{\rightskip}{0pt plus 5cm}Double usina.\-Distribuicao\-Vazao.\-get\-Vazao\-Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_distribuicao_vazao_ad34a5a0175ac8ed7c2fffc57b2fb325e}
+
+
+Retorna a soma das vazões geradas pelas turbinas. 
+
+\begin{DoxySince}{Desde}
+1.\-0 
+\end{DoxySince}
+\begin{DoxyReturn}{Retorna}
+Vazão total. 
+\end{DoxyReturn}
+
+
+Este é o diagrama das funções que utilizam esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_distribuicao_vazao_ad34a5a0175ac8ed7c2fffc57b2fb325e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classusina_1_1_distribuicao_vazao_a3fe3a91243c236757535a001afaf2aa3}{\index{usina\-::\-Distribuicao\-Vazao@{usina\-::\-Distribuicao\-Vazao}!to\-String\-Detalhado@{to\-String\-Detalhado}}
+\index{to\-String\-Detalhado@{to\-String\-Detalhado}!usina::DistribuicaoVazao@{usina\-::\-Distribuicao\-Vazao}}
+\subsubsection[{to\-String\-Detalhado}]{\setlength{\rightskip}{0pt plus 5cm}String usina.\-Distribuicao\-Vazao.\-to\-String\-Detalhado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classusina_1_1_distribuicao_vazao_a3fe3a91243c236757535a001afaf2aa3}
+
+
+Este é o diagrama das funções utilizadas por esta função\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classusina_1_1_distribuicao_vazao_a3fe3a91243c236757535a001afaf2aa3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Victor/workplace/\-Net\-Beans\-Projects/tcc/src/usina/\hyperlink{_distribuicao_vazao_8java}{Distribuicao\-Vazao.\-java}\end{DoxyCompactItemize}

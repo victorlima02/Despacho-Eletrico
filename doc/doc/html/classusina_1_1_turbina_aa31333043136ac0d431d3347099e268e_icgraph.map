@@ -1,0 +1,4 @@
+<map id="usina.Turbina.getQuedaBruta" name="usina.Turbina.getQuedaBruta">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#ad7eb2929acee76d69ef06d67c01d0e1a" title="Calcula o rendimento da turbina dado um fluxo. " alt="" coords="246,5,437,32"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#ab5f2692c54cf1e3fe6b30adc3b481710" title="Calcula a potência gerada da turbina dado um fluxo. " alt="" coords="485,31,659,57"/>
+</map>

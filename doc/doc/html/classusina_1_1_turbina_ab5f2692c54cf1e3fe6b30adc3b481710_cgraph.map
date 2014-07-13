@@ -1,0 +1,4 @@
+<map id="usina.Turbina.getPotencia" name="usina.Turbina.getPotencia">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#ad7eb2929acee76d69ef06d67c01d0e1a" title="Calcula o rendimento da turbina dado um fluxo. " alt="" coords="227,5,418,32"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#aa31333043136ac0d431d3347099e268e" title="Recupera a queda bruta, definida na instalação. " alt="" coords="467,31,658,57"/>
+</map>

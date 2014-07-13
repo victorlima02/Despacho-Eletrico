@@ -1,0 +1,5 @@
+<map id="usina.Turbina.instala" name="usina.Turbina.instala">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#a373df75de3c1226b0d518254ae3831bf" title="Define a queda bruta no momento da instalação. " alt="" coords="202,5,393,32"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#a15f7eae41d56f2cbb7a271a3af549350" title="Conecta a turbina a um conduto no momento da instalação. " alt="" coords="198,56,397,83"/>
+<area shape="rect" id="node4" href="$classusina_1_1_turbina.html#aab5ba2c5ccb1f98ea31928d3197f8a88" title="Verifica o estado da turbina, conectada ou desconectada. " alt="" coords="445,56,621,83"/>
+</map>

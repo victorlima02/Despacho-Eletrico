@@ -1,0 +1,6 @@
+<map id="usina.Fluxo.getTurbinaReferencia" name="usina.Fluxo.getTurbinaReferencia">
+<area shape="rect" id="node2" href="$classusina_1_1_fluxo.html#a767621d68cb2ceb8dbbd03bacba8cba5" title="Retorna a potência gerada pelo fluxo na turbina. " alt="" coords="315,5,477,32"/>
+<area shape="rect" id="node4" href="$classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="334,56,458,83"/>
+<area shape="rect" id="node5" href="$classusina_1_1operadores_1_1_recombinacao.html#aec7a06aa6a7de39a4407fd230dae656a" title="usina.operadores.Recombinacao.simple\lRecombination" alt="" coords="269,107,523,149"/>
+<area shape="rect" id="node3" href="$classusina_1_1_fluxo.html#aa7c07414a1af3c807312950fa5019591" title="usina.Fluxo.toString" alt="" coords="571,5,709,32"/>
+</map>

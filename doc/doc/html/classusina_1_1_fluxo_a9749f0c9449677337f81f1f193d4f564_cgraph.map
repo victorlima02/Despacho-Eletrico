@@ -1,0 +1,10 @@
+<map id="usina.Fluxo.copia" name="usina.Fluxo.copia">
+<area shape="rect" id="node2" href="$classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141" title="Construtor com Reynolds padrão. " alt="" coords="224,96,349,123"/>
+<area shape="rect" id="node7" href="$classusina_1_1_fluxo.html#a0634c81d7575ad63274828d8c40a88e5" title="Recupera o valor da vazão do fluxo. " alt="" coords="213,147,361,173"/>
+<area shape="rect" id="node8" href="$classusina_1_1_fluxo.html#a110ca81bcee4d7f8f08298b3b9372d21" title="Recupera o número de Reynolds usado. " alt="" coords="204,197,369,224"/>
+<area shape="rect" id="node9" href="$classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d" title="Recupera a turbina da referência. " alt="" coords="179,248,395,275"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#a62be0e3ac4c6461fc2202b6b97cbf8ec" title="Recupera o limite mínimo de vazão para operação da turbina. " alt="" coords="443,5,621,46"/>
+<area shape="rect" id="node4" href="$classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f" title="Atribui uma turbina de referência ao fluxo. " alt="" coords="455,71,609,97"/>
+<area shape="rect" id="node5" href="$classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a" title="Atribui um novo valor de vazão ao fluxo. " alt="" coords="458,121,606,148"/>
+<area shape="rect" id="node6" href="$classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823" title="Atribui um número de Reynolds ao fluxo. " alt="" coords="449,172,615,199"/>
+</map>

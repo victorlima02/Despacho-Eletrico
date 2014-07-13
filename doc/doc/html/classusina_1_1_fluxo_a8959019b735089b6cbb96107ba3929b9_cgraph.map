@@ -1,0 +1,6 @@
+<map id="usina.Fluxo.Fluxo" name="usina.Fluxo.Fluxo">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#a62be0e3ac4c6461fc2202b6b97cbf8ec" title="Recupera o limite mínimo de vazão para operação da turbina. " alt="" coords="179,5,357,46"/>
+<area shape="rect" id="node3" href="$classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f" title="Atribui uma turbina de referência ao fluxo. " alt="" coords="191,71,345,97"/>
+<area shape="rect" id="node4" href="$classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823" title="Atribui um número de Reynolds ao fluxo. " alt="" coords="185,121,351,148"/>
+<area shape="rect" id="node5" href="$classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a" title="Atribui um novo valor de vazão ao fluxo. " alt="" coords="194,172,342,199"/>
+</map>

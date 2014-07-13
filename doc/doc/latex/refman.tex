@@ -1,0 +1,212 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[brazil]{babel}
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Gerado em Segunda, 7 de Julho de 2014 14\-:15\-:04 para T\-C\-C por Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Gerado em Segunda, 7 de Julho de 2014 14\-:15\-:04 para T\-C\-C por Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false}
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large T\-C\-C \\[1ex]\large 1.\-0 }\\
+\vspace*{1cm}
+{\large Gerado por Doxygen 1.8.6}\\
+\vspace*{0.5cm}
+{\small Segunda, 7 de Julho de 2014 14:15:04}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Lista de Descontinuados(as)}
+\label{deprecated}
+\hypertarget{deprecated}{}
+\input{deprecated}
+\chapter{Namespaces}
+\input{namespaces}
+\chapter{Índice Hierárquico}
+\input{hierarchy}
+\chapter{Índice dos Componentes}
+\input{annotated}
+\chapter{Índice dos Arquivos}
+\input{files}
+\chapter{Namespaces}
+\input{namespacetcc}
+\input{namespaceusina}
+\input{namespaceusina_1_1_d_a_o}
+\input{namespaceusina_1_1_d_a_o_1_1turbina}
+\input{namespaceusina_1_1factory}
+\input{namespaceusina_1_1operadores}
+\input{namespaceusina_1_1tubulacao}
+\chapter{Classes}
+\input{classtcc_1_1_algoritmo}
+\input{classusina_1_1tubulacao_1_1_conduto}
+\input{classusina_1_1tubulacao_1_1_conector_cilindrico_curvo_poligonal}
+\input{classusina_1_1tubulacao_1_1_conector_cilindrico_curvo_suave}
+\input{enumusina_1_1_d_a_o_1_1turbina_1_1_tubina_d_a_o_factory_1_1_d_a_o_types}
+\input{classusina_1_1_distribuicao_vazao}
+\input{classusina_1_1_fluxo}
+\input{classusina_1_1operadores_1_1_geracao}
+\input{classusina_1_1operadores_1_1_mutacao}
+\input{classusina_1_1_populacao_de_distribuicoes}
+\input{classusina_1_1operadores_1_1_recombinacao}
+\input{classusina_1_1operadores_1_1_selecao}
+\input{classtcc_1_1_simulacao}
+\input{classusina_1_1_d_a_o_1_1turbina_1_1_tubina_d_a_o_factory}
+\input{classusina_1_1tubulacao_1_1_tubo_cilindrico_reto}
+\input{classusina_1_1_turbina}
+\input{classusina_1_1_d_a_o_1_1turbina_1_1_turbina_c_s_v_file_d_a_o}
+\input{interfaceusina_1_1_d_a_o_1_1turbina_1_1_turbina_d_a_o}
+\input{classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer}
+\input{classusina_1_1_usina}
+\input{classusina_1_1factory_1_1_usina_factory}
+\input{enumusina_1_1factory_1_1_usina_factory_1_1_usinas}
+\chapter{Arquivos}
+\input{_algoritmo_8java}
+\input{_simulacao_8java}
+\input{_tubina_d_a_o_factory_8java}
+\input{_turbina_c_s_v_file_d_a_o_8java}
+\input{_turbina_d_a_o_8java}
+\input{_turbina_transfer_8java}
+\input{_distribuicao_vazao_8java}
+\input{_usina_factory_8java}
+\input{_fluxo_8java}
+\input{_geracao_8java}
+\input{_mutacao_8java}
+\input{_recombinacao_8java}
+\input{_selecao_8java}
+\input{_populacao_de_distribuicoes_8java}
+\input{_conduto_8java}
+\input{_conector_8java}
+\input{_conector_cilindrico_curvo_8java}
+\input{_conector_cilindrico_curvo_poligonal_8java}
+\input{_conector_cilindrico_curvo_suave_8java}
+\input{_tubo_8java}
+\input{_tubo_cilindrico_8java}
+\input{_tubo_cilindrico_reto_8java}
+\input{_tubulacao_8java}
+\input{_turbina_8java}
+\input{_usina_8java}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Índice}
+\printindex
+
+\end{document}

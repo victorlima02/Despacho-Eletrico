@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>TCC: Referência da Classe usina.DAO.turbina.TurbinaTransfer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TCC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Pacotes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.html"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-static-methods">Métodos Públicos Estáticos</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="#pri-static-attribs">Atributos Privados Estáticos</a> &#124;
+<a href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe usina.DAO.turbina.TurbinaTransfer</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de Hierarquia para usina.DAO.turbina.TurbinaTransfer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer__inherit__graph.png" border="0" usemap="#usina_8_d_a_o_8turbina_8_turbina_transfer_inherit__map" alt="Inheritance graph"/></div>
+</div>
+<div class="dynheader">
+Diagrama de colaboração para usina.DAO.turbina.TurbinaTransfer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer__coll__graph.png" border="0" usemap="#usina_8_d_a_o_8turbina_8_turbina_transfer_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a4c2bbe761c866e3c72ebbe275831bca8"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4c2bbe761c866e3c72ebbe275831bca8">getQuedaBruta</a> ()</td></tr>
+<tr class="separator:a4c2bbe761c866e3c72ebbe275831bca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5de3da4b8cee3c55854ad7a57f65ac"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4c5de3da4b8cee3c55854ad7a57f65ac">setQuedaBruta</a> (Double <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a5b40ddc2d5b209be42cd79baf5a0d83f">quedaBruta</a>)</td></tr>
+<tr class="separator:a4c5de3da4b8cee3c55854ad7a57f65ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2454a13b262136b3512301578b064c28"><td class="memItemLeft" align="right" valign="top">final Double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a2454a13b262136b3512301578b064c28">getParametrosRendimento</a> ()</td></tr>
+<tr class="separator:a2454a13b262136b3512301578b064c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09817f72c0526dcaa4f4cedad4dd15d9"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a09817f72c0526dcaa4f4cedad4dd15d9">setParametrosRendimento</a> (Double[] <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8395d06deeaaf0d3d525a48cb1e27d80">parametrosRendimento</a>)</td></tr>
+<tr class="separator:a09817f72c0526dcaa4f4cedad4dd15d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37f79918c89ff4c9b6e2ef91292b7b0"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ac37f79918c89ff4c9b6e2ef91292b7b0">isLigado</a> ()</td></tr>
+<tr class="separator:ac37f79918c89ff4c9b6e2ef91292b7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae559cf1382c97ffc970c9f4b92d7320f"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ae559cf1382c97ffc970c9f4b92d7320f">setLigado</a> (boolean <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ae108175db307ad716b1508b2be10dba3">ligado</a>)</td></tr>
+<tr class="separator:ae559cf1382c97ffc970c9f4b92d7320f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311e11662731ef3fa7b66c2e2c30eff2"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a311e11662731ef3fa7b66c2e2c30eff2">getLimiteMinDePotencia</a> ()</td></tr>
+<tr class="separator:a311e11662731ef3fa7b66c2e2c30eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa161048f74571f11ce32207b5109463b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aa161048f74571f11ce32207b5109463b">setLimiteMinDePotencia</a> (Double <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a9b91ed0c68d559ef9c7e2ea953bf052a">limiteMinDePotencia</a>)</td></tr>
+<tr class="separator:aa161048f74571f11ce32207b5109463b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfc16ec00fe281cb844cddaac8c0543"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#acbfc16ec00fe281cb844cddaac8c0543">getLimiteMaxDePotencia</a> ()</td></tr>
+<tr class="separator:acbfc16ec00fe281cb844cddaac8c0543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444a133dd9727b2f04b0939d6f1c93fc"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a444a133dd9727b2f04b0939d6f1c93fc">setLimiteMaxDePotencia</a> (Double <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aaec5e55fb790620bbf92f759a3165a97">limiteMaxDePotencia</a>)</td></tr>
+<tr class="separator:a444a133dd9727b2f04b0939d6f1c93fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6e40f8a29ecc5a568950cf150644ee"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4b6e40f8a29ecc5a568950cf150644ee">getLimiteMinDeVazao</a> ()</td></tr>
+<tr class="separator:a4b6e40f8a29ecc5a568950cf150644ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab387846f77bd4763b074148dc03d19c"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aab387846f77bd4763b074148dc03d19c">setLimiteMinDeVazao</a> (Double <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aa90e1fc61b14789cf04163ae4b76b810">limiteMinDeVazao</a>)</td></tr>
+<tr class="separator:aab387846f77bd4763b074148dc03d19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe718b17c9f695aa6a48b7d7a153fb8"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8fe718b17c9f695aa6a48b7d7a153fb8">getLimiteMaxDeVazao</a> ()</td></tr>
+<tr class="separator:a8fe718b17c9f695aa6a48b7d7a153fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f62414f1ea058927f7dd90497ea275e"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8f62414f1ea058927f7dd90497ea275e">setLimiteMaxDeVazao</a> (Double <a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a07a09b7c71eb2f197aaf343851fe8f7b">limiteMaxDeVazao</a>)</td></tr>
+<tr class="separator:a8f62414f1ea058927f7dd90497ea275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Métodos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a69998933bc99e29515935abd270cba92"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a69998933bc99e29515935abd270cba92">getSerialversionuid</a> ()</td></tr>
+<tr class="separator:a69998933bc99e29515935abd270cba92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:ae108175db307ad716b1508b2be10dba3"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ae108175db307ad716b1508b2be10dba3">ligado</a></td></tr>
+<tr class="separator:ae108175db307ad716b1508b2be10dba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b91ed0c68d559ef9c7e2ea953bf052a"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a9b91ed0c68d559ef9c7e2ea953bf052a">limiteMinDePotencia</a></td></tr>
+<tr class="separator:a9b91ed0c68d559ef9c7e2ea953bf052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec5e55fb790620bbf92f759a3165a97"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aaec5e55fb790620bbf92f759a3165a97">limiteMaxDePotencia</a></td></tr>
+<tr class="separator:aaec5e55fb790620bbf92f759a3165a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90e1fc61b14789cf04163ae4b76b810"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aa90e1fc61b14789cf04163ae4b76b810">limiteMinDeVazao</a></td></tr>
+<tr class="separator:aa90e1fc61b14789cf04163ae4b76b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8395d06deeaaf0d3d525a48cb1e27d80"><td class="memItemLeft" align="right" valign="top">Double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8395d06deeaaf0d3d525a48cb1e27d80">parametrosRendimento</a></td></tr>
+<tr class="separator:a8395d06deeaaf0d3d525a48cb1e27d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b40ddc2d5b209be42cd79baf5a0d83f"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a5b40ddc2d5b209be42cd79baf5a0d83f">quedaBruta</a></td></tr>
+<tr class="separator:a5b40ddc2d5b209be42cd79baf5a0d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a09b7c71eb2f197aaf343851fe8f7b"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a07a09b7c71eb2f197aaf343851fe8f7b">limiteMaxDeVazao</a></td></tr>
+<tr class="separator:a07a09b7c71eb2f197aaf343851fe8f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:af045072d2dcbfdf01eef572cf62ba9e3"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#af045072d2dcbfdf01eef572cf62ba9e3">serialVersionUID</a> = -3435631488834951304L</td></tr>
+<tr class="separator:af045072d2dcbfdf01eef572cf62ba9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Victor Soares </dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Descontinuado(a):</a></b></dt><dd></dd></dl>
+</div><h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="acbfc16ec00fe281cb844cddaac8c0543"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.DAO.turbina.TurbinaTransfer.getLimiteMaxDePotencia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the limiteMaxDePotencia </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8fe718b17c9f695aa6a48b7d7a153fb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.DAO.turbina.TurbinaTransfer.getLimiteMaxDeVazao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the limiteMaxDeVazao </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a311e11662731ef3fa7b66c2e2c30eff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.DAO.turbina.TurbinaTransfer.getLimiteMinDePotencia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the limiteMinDePotencia </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b6e40f8a29ecc5a568950cf150644ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.DAO.turbina.TurbinaTransfer.getLimiteMinDeVazao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the limiteMinDeVazao </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2454a13b262136b3512301578b064c28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double [] usina.DAO.turbina.TurbinaTransfer.getParametrosRendimento </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>O parametrosRendimento a ser atribuido. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c2bbe761c866e3c72ebbe275831bca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.DAO.turbina.TurbinaTransfer.getQuedaBruta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>O quedaBruta a ser atribuido. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69998933bc99e29515935abd270cba92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final long usina.DAO.turbina.TurbinaTransfer.getSerialversionuid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the serialversionuid </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac37f79918c89ff4c9b6e2ef91292b7b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final boolean usina.DAO.turbina.TurbinaTransfer.isLigado </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>the ligado </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae559cf1382c97ffc970c9f4b92d7320f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setLigado </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>ligado</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ligado</td><td>the ligado to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a444a133dd9727b2f04b0939d6f1c93fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setLimiteMaxDePotencia </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>limiteMaxDePotencia</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limiteMaxDePotencia</td><td>the limiteMaxDePotencia to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f62414f1ea058927f7dd90497ea275e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setLimiteMaxDeVazao </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>limiteMaxDeVazao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limiteMaxDeVazao</td><td>the limiteMaxDeVazao to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa161048f74571f11ce32207b5109463b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setLimiteMinDePotencia </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>limiteMinDePotencia</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limiteMinDePotencia</td><td>the limiteMinDePotencia to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aab387846f77bd4763b074148dc03d19c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setLimiteMinDeVazao </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>limiteMinDeVazao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limiteMinDeVazao</td><td>the limiteMinDeVazao to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a09817f72c0526dcaa4f4cedad4dd15d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setParametrosRendimento </td>
+          <td>(</td>
+          <td class="paramtype">Double[]&#160;</td>
+          <td class="paramname"><em>parametrosRendimento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parametrosRendimento</td><td>the parametrosRendimento to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c5de3da4b8cee3c55854ad7a57f65ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.DAO.turbina.TurbinaTransfer.setQuedaBruta </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>quedaBruta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quedaBruta</td><td>the quedaBruta to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="ae108175db307ad716b1508b2be10dba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean usina.DAO.turbina.TurbinaTransfer.ligado</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="aaec5e55fb790620bbf92f759a3165a97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.DAO.turbina.TurbinaTransfer.limiteMaxDePotencia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="a07a09b7c71eb2f197aaf343851fe8f7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.DAO.turbina.TurbinaTransfer.limiteMaxDeVazao</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="a9b91ed0c68d559ef9c7e2ea953bf052a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.DAO.turbina.TurbinaTransfer.limiteMinDePotencia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="aa90e1fc61b14789cf04163ae4b76b810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.DAO.turbina.TurbinaTransfer.limiteMinDeVazao</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="a8395d06deeaaf0d3d525a48cb1e27d80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double [] usina.DAO.turbina.TurbinaTransfer.parametrosRendimento</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="a5b40ddc2d5b209be42cd79baf5a0d83f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.DAO.turbina.TurbinaTransfer.quedaBruta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
+<a class="anchor" id="af045072d2dcbfdf01eef572cf62ba9e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final long usina.DAO.turbina.TurbinaTransfer.serialVersionUID = -3435631488834951304L</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li>C:/Users/Victor/workplace/NetBeansProjects/tcc/src/usina/DAO/turbina/<a class="el" href="_turbina_transfer_8java.html">TurbinaTransfer.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceusina.html">usina</a></li><li class="navelem"><a class="el" href="namespaceusina_1_1_d_a_o.html">DAO</a></li><li class="navelem"><a class="el" href="namespaceusina_1_1_d_a_o_1_1turbina.html">turbina</a></li><li class="navelem"><a class="el" href="classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html">TurbinaTransfer</a></li>
+    <li class="footer">Gerado em Segunda, 7 de Julho de 2014 14:15:04 para TCC por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

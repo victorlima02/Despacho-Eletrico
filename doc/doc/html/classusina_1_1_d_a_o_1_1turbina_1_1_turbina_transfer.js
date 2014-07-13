@@ -1,0 +1,26 @@
+var classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer =
+[
+    [ "getLimiteMaxDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#acbfc16ec00fe281cb844cddaac8c0543", null ],
+    [ "getLimiteMaxDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8fe718b17c9f695aa6a48b7d7a153fb8", null ],
+    [ "getLimiteMinDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a311e11662731ef3fa7b66c2e2c30eff2", null ],
+    [ "getLimiteMinDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4b6e40f8a29ecc5a568950cf150644ee", null ],
+    [ "getParametrosRendimento", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a2454a13b262136b3512301578b064c28", null ],
+    [ "getQuedaBruta", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4c2bbe761c866e3c72ebbe275831bca8", null ],
+    [ "getSerialversionuid", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a69998933bc99e29515935abd270cba92", null ],
+    [ "isLigado", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ac37f79918c89ff4c9b6e2ef91292b7b0", null ],
+    [ "setLigado", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ae559cf1382c97ffc970c9f4b92d7320f", null ],
+    [ "setLimiteMaxDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a444a133dd9727b2f04b0939d6f1c93fc", null ],
+    [ "setLimiteMaxDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8f62414f1ea058927f7dd90497ea275e", null ],
+    [ "setLimiteMinDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aa161048f74571f11ce32207b5109463b", null ],
+    [ "setLimiteMinDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aab387846f77bd4763b074148dc03d19c", null ],
+    [ "setParametrosRendimento", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a09817f72c0526dcaa4f4cedad4dd15d9", null ],
+    [ "setQuedaBruta", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a4c5de3da4b8cee3c55854ad7a57f65ac", null ],
+    [ "ligado", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#ae108175db307ad716b1508b2be10dba3", null ],
+    [ "limiteMaxDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aaec5e55fb790620bbf92f759a3165a97", null ],
+    [ "limiteMaxDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a07a09b7c71eb2f197aaf343851fe8f7b", null ],
+    [ "limiteMinDePotencia", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a9b91ed0c68d559ef9c7e2ea953bf052a", null ],
+    [ "limiteMinDeVazao", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#aa90e1fc61b14789cf04163ae4b76b810", null ],
+    [ "parametrosRendimento", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a8395d06deeaaf0d3d525a48cb1e27d80", null ],
+    [ "quedaBruta", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#a5b40ddc2d5b209be42cd79baf5a0d83f", null ],
+    [ "serialVersionUID", "classusina_1_1_d_a_o_1_1turbina_1_1_turbina_transfer.html#af045072d2dcbfdf01eef572cf62ba9e3", null ]
+];

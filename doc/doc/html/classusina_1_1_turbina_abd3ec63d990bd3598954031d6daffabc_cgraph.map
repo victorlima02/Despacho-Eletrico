@@ -1,0 +1,7 @@
+<map id="usina.Turbina.Turbina" name="usina.Turbina.Turbina">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#aef2a44bda149b3bd9afd627145b53df2" title="Controla o estado de uma turbina, ligando ou desligando a mesma. " alt="" coords="215,5,375,32"/>
+<area shape="rect" id="node4" href="$classusina_1_1_turbina.html#af3c11239f2309b85267bdc60580bd9a8" title="Atribui limites à potência da turbina. " alt="" coords="213,57,377,98"/>
+<area shape="rect" id="node5" href="$classusina_1_1_turbina.html#a7b96c0bc6e3eff9430d79d287645c306" title="Atribui limites à vazão da turbina. " alt="" coords="213,122,377,163"/>
+<area shape="rect" id="node6" href="$classusina_1_1_turbina.html#abc98fbb1a34b3d911b791e6a19f9c784" title="Atribui os parâmetros para o calculo do getRendimento. " alt="" coords="200,187,389,229"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#aab5ba2c5ccb1f98ea31928d3197f8a88" title="Verifica o estado da turbina, conectada ou desconectada. " alt="" coords="437,5,613,32"/>
+</map>

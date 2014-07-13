@@ -1,0 +1,6 @@
+<map id="usina.Turbina.isConectada" name="usina.Turbina.isConectada">
+<area shape="rect" id="node2" href="$classusina_1_1_turbina.html#a15f7eae41d56f2cbb7a271a3af549350" title="Conecta a turbina a um conduto no momento da instalação. " alt="" coords="230,5,429,32"/>
+<area shape="rect" id="node4" href="$classusina_1_1_turbina.html#aef2a44bda149b3bd9afd627145b53df2" title="Controla o estado de uma turbina, ligando ou desligando a mesma. " alt="" coords="249,56,409,83"/>
+<area shape="rect" id="node3" href="$classusina_1_1_turbina.html#ad46569765ed883b27b39096e6e30ffe9" title="Instala turbina na usina por meio de um conduto. " alt="" coords="479,5,622,32"/>
+<area shape="rect" id="node5" href="$classusina_1_1_turbina.html#abd3ec63d990bd3598954031d6daffabc" title="Construtor. " alt="" coords="477,56,624,83"/>
+</map>

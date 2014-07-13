@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>TCC: Referência da Classe usina.Fluxo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TCC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Pacotes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.html"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classusina_1_1_fluxo.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos Estáticos Públicos</a> &#124;
+<a href="#pri-methods">Métodos Privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="classusina_1_1_fluxo-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe usina.Fluxo</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classusina_1_1_fluxo.html" title="Fluxo. ">Fluxo</a>.  
+ <a href="classusina_1_1_fluxo.html#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de Hierarquia para usina.Fluxo:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo__inherit__graph.png" border="0" usemap="#usina_8_fluxo_inherit__map" alt="Inheritance graph"/></div>
+<map name="usina_8_fluxo_inherit__map" id="usina_8_fluxo_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+Diagrama de colaboração para usina.Fluxo:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo__coll__graph.png" border="0" usemap="#usina_8_fluxo_coll__map" alt="Collaboration graph"/></div>
+<map name="usina_8_fluxo_coll__map" id="usina_8_fluxo_coll__map">
+<area shape="rect" id="node3" href="classusina_1_1_turbina.html" title="Conjunto turbina&#45;gerador. " alt="" coords="141,5,336,347"/><area shape="rect" id="node4" href="classusina_1_1tubulacao_1_1_conduto.html" title="{usina.tubulacao.Conduto\n||+ Conduto()\l+ Conduto()\l+ conectaTurbina()\l+ isConectado()\l+ adicianaTubo()\l+ getPerdaHidraulica()\l}" alt="" coords="245,455,411,606"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:ab85463cd78cac200be698b91c6be1141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141">Fluxo</a> (Double vazao, <a class="el" href="classusina_1_1_turbina.html">Turbina</a> turbina)</td></tr>
+<tr class="memdesc:ab85463cd78cac200be698b91c6be1141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor com Reynolds padrão.  <a href="#ab85463cd78cac200be698b91c6be1141">Mais...</a><br/></td></tr>
+<tr class="separator:ab85463cd78cac200be698b91c6be1141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8959019b735089b6cbb96107ba3929b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a8959019b735089b6cbb96107ba3929b9">Fluxo</a> (Double vazao, Double <a class="el" href="classusina_1_1_fluxo.html#a185fed046eefce4fa8f8bb10fde8296d">reynolds</a>, <a class="el" href="classusina_1_1_turbina.html">Turbina</a> turbina)</td></tr>
+<tr class="memdesc:a8959019b735089b6cbb96107ba3929b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor detalhado.  <a href="#a8959019b735089b6cbb96107ba3929b9">Mais...</a><br/></td></tr>
+<tr class="separator:a8959019b735089b6cbb96107ba3929b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80f13f4ade8128bac424b456ec0836a"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a">setVazao</a> (Double vazao)</td></tr>
+<tr class="memdesc:af80f13f4ade8128bac424b456ec0836a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atribui um novo valor de vazão ao fluxo.  <a href="#af80f13f4ade8128bac424b456ec0836a">Mais...</a><br/></td></tr>
+<tr class="separator:af80f13f4ade8128bac424b456ec0836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0634c81d7575ad63274828d8c40a88e5"><td class="memItemLeft" align="right" valign="top">final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a0634c81d7575ad63274828d8c40a88e5">getVazao</a> ()</td></tr>
+<tr class="memdesc:a0634c81d7575ad63274828d8c40a88e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera o valor da vazão do fluxo.  <a href="#a0634c81d7575ad63274828d8c40a88e5">Mais...</a><br/></td></tr>
+<tr class="separator:a0634c81d7575ad63274828d8c40a88e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110ca81bcee4d7f8f08298b3b9372d21"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a110ca81bcee4d7f8f08298b3b9372d21">getReynolds</a> ()</td></tr>
+<tr class="memdesc:a110ca81bcee4d7f8f08298b3b9372d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera o número de Reynolds usado.  <a href="#a110ca81bcee4d7f8f08298b3b9372d21">Mais...</a><br/></td></tr>
+<tr class="separator:a110ca81bcee4d7f8f08298b3b9372d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cc464f6926c453c51fcded2d57306d"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classusina_1_1_turbina.html">Turbina</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d">getTurbinaReferencia</a> ()</td></tr>
+<tr class="memdesc:a61cc464f6926c453c51fcded2d57306d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera a turbina da referência.  <a href="#a61cc464f6926c453c51fcded2d57306d">Mais...</a><br/></td></tr>
+<tr class="separator:a61cc464f6926c453c51fcded2d57306d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767621d68cb2ceb8dbbd03bacba8cba5"><td class="memItemLeft" align="right" valign="top">final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a767621d68cb2ceb8dbbd03bacba8cba5">getPotencia</a> ()</td></tr>
+<tr class="memdesc:a767621d68cb2ceb8dbbd03bacba8cba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a potência gerada pelo fluxo na turbina.  <a href="#a767621d68cb2ceb8dbbd03bacba8cba5">Mais...</a><br/></td></tr>
+<tr class="separator:a767621d68cb2ceb8dbbd03bacba8cba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9749f0c9449677337f81f1f193d4f564"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classusina_1_1_fluxo.html">Fluxo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564">copia</a> ()</td></tr>
+<tr class="separator:a9749f0c9449677337f81f1f193d4f564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c07414a1af3c807312950fa5019591"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#aa7c07414a1af3c807312950fa5019591">toString</a> ()</td></tr>
+<tr class="separator:aa7c07414a1af3c807312950fa5019591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Atributos Estáticos Públicos</h2></td></tr>
+<tr class="memitem:ad85aeeb220a6c87764d29ce36bb8cc26"><td class="memItemLeft" align="right" valign="top">static final Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#ad85aeeb220a6c87764d29ce36bb8cc26">REYNOLDS_PADRAO</a> = 70000.0</td></tr>
+<tr class="separator:ad85aeeb220a6c87764d29ce36bb8cc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Métodos Privados</h2></td></tr>
+<tr class="memitem:a1c204862a651d75929b078355b512823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823">setReynolds</a> (Double <a class="el" href="classusina_1_1_fluxo.html#a185fed046eefce4fa8f8bb10fde8296d">reynolds</a>)</td></tr>
+<tr class="memdesc:a1c204862a651d75929b078355b512823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atribui um número de Reynolds ao fluxo.  <a href="#a1c204862a651d75929b078355b512823">Mais...</a><br/></td></tr>
+<tr class="separator:a1c204862a651d75929b078355b512823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb30b3608a7ab915ff332018a18d81f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f">setTurbina</a> (<a class="el" href="classusina_1_1_turbina.html">Turbina</a> <a class="el" href="classusina_1_1_fluxo.html#aee04932f02b1bfad1bf79cc80a1df203">turbinaReferencia</a>)</td></tr>
+<tr class="memdesc:a3bb30b3608a7ab915ff332018a18d81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atribui uma turbina de referência ao fluxo.  <a href="#a3bb30b3608a7ab915ff332018a18d81f">Mais...</a><br/></td></tr>
+<tr class="separator:a3bb30b3608a7ab915ff332018a18d81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a185fed046eefce4fa8f8bb10fde8296d"><td class="memItemLeft" align="right" valign="top">Double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#a185fed046eefce4fa8f8bb10fde8296d">reynolds</a></td></tr>
+<tr class="separator:a185fed046eefce4fa8f8bb10fde8296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee04932f02b1bfad1bf79cc80a1df203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classusina_1_1_turbina.html">Turbina</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classusina_1_1_fluxo.html#aee04932f02b1bfad1bf79cc80a1df203">turbinaReferencia</a></td></tr>
+<tr class="separator:aee04932f02b1bfad1bf79cc80a1df203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p><a class="el" href="classusina_1_1_fluxo.html" title="Fluxo. ">Fluxo</a>. </p>
+<p>Essa classe representa uma abstração do conceito de fluxo, armazenado em si o valor de uma vazão, seu número de Reynolds e a turbina que o contém,enquanto, permitindo a manipulação dos dados referentes a vazão de modo seguro - respeitando os limites impostos pela turbina. </p>
+<p>Objetos da classe <code><a class="el" href="classusina_1_1_fluxo.html" title="Fluxo. ">Fluxo</a></code> indicarão a qual gerador pertencem, compondo facilmente distribuições de fluxo, sem necessidade de que objetos da classe <code><a class="el" href="classusina_1_1_turbina.html" title="Conjunto turbina-gerador. ">Turbina</a></code> sejam criados mais de uma vez em uma usina. </p>
+<p>Adicionalmente, referências indicando a turbina a qual se refere o fluxo são usadas para verificação dos intervalos de entrada, vazão, ditados pela capacidade de cada turbina. </p>
+<p>A classe estende a a classe <code>LocusReal</code>, o que a torna passível de utilização em algoritmos evolucionários como característica de um ser baseado em valores reais. </p>
+<dl class="section author"><dt>Autor</dt><dd>Victor Soares </dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.0</dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd>SerReal </dd>
+<dd>
+LocusReal </dd></dl>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="ab85463cd78cac200be698b91c6be1141"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">usina.Fluxo.Fluxo </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>vazao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classusina_1_1_turbina.html">Turbina</a>&#160;</td>
+          <td class="paramname"><em>turbina</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor com Reynolds padrão. </p>
+<p>Reynolds padrão: 70000. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vazao</td><td>Valor da vazão. </td></tr>
+    <tr><td class="paramname">turbina</td><td><a class="el" href="classusina_1_1_turbina.html" title="Conjunto turbina-gerador. ">Turbina</a> de referência. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_cgraph.png" border="0" usemap="#classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_cgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_cgraph" id="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_cgraph">
+<area shape="rect" id="node2" href="classusina_1_1_turbina.html#a62be0e3ac4c6461fc2202b6b97cbf8ec" title="Recupera o limite mínimo de vazão para operação da turbina. " alt="" coords="179,5,357,46"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f" title="Atribui uma turbina de referência ao fluxo. " alt="" coords="191,71,345,97"/><area shape="rect" id="node4" href="classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a" title="Atribui um novo valor de vazão ao fluxo. " alt="" coords="194,121,342,148"/><area shape="rect" id="node5" href="classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823" title="Atribui um número de Reynolds ao fluxo. " alt="" coords="185,172,351,199"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_icgraph" id="classusina_1_1_fluxo_ab85463cd78cac200be698b91c6be1141_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="179,5,303,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8959019b735089b6cbb96107ba3929b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">usina.Fluxo.Fluxo </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>vazao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>reynolds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classusina_1_1_turbina.html">Turbina</a>&#160;</td>
+          <td class="paramname"><em>turbina</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor detalhado. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vazao</td><td>Valor da vazão. </td></tr>
+    <tr><td class="paramname">reynolds</td><td>Número de Reynolds. </td></tr>
+    <tr><td class="paramname">turbina</td><td><a class="el" href="classusina_1_1_turbina.html" title="Conjunto turbina-gerador. ">Turbina</a> de referência. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9_cgraph.png" border="0" usemap="#classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9_cgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9_cgraph" id="classusina_1_1_fluxo_a8959019b735089b6cbb96107ba3929b9_cgraph">
+<area shape="rect" id="node2" href="classusina_1_1_turbina.html#a62be0e3ac4c6461fc2202b6b97cbf8ec" title="Recupera o limite mínimo de vazão para operação da turbina. " alt="" coords="179,5,357,46"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f" title="Atribui uma turbina de referência ao fluxo. " alt="" coords="191,71,345,97"/><area shape="rect" id="node4" href="classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823" title="Atribui um número de Reynolds ao fluxo. " alt="" coords="185,121,351,148"/><area shape="rect" id="node5" href="classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a" title="Atribui um novo valor de vazão ao fluxo. " alt="" coords="194,172,342,199"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a9749f0c9449677337f81f1f193d4f564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classusina_1_1_fluxo.html">Fluxo</a> usina.Fluxo.copia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564_cgraph.png" border="0" usemap="#classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564_cgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564_cgraph" id="classusina_1_1_fluxo_a9749f0c9449677337f81f1f193d4f564_cgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141" title="Construtor com Reynolds padrão. " alt="" coords="224,96,349,123"/><area shape="rect" id="node7" href="classusina_1_1_fluxo.html#a0634c81d7575ad63274828d8c40a88e5" title="Recupera o valor da vazão do fluxo. " alt="" coords="213,147,361,173"/><area shape="rect" id="node8" href="classusina_1_1_fluxo.html#a110ca81bcee4d7f8f08298b3b9372d21" title="Recupera o número de Reynolds usado. " alt="" coords="204,197,369,224"/><area shape="rect" id="node9" href="classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d" title="Recupera a turbina da referência. " alt="" coords="179,248,395,275"/><area shape="rect" id="node3" href="classusina_1_1_turbina.html#a62be0e3ac4c6461fc2202b6b97cbf8ec" title="Recupera o limite mínimo de vazão para operação da turbina. " alt="" coords="443,5,621,46"/><area shape="rect" id="node4" href="classusina_1_1_fluxo.html#a3bb30b3608a7ab915ff332018a18d81f" title="Atribui uma turbina de referência ao fluxo. " alt="" coords="455,71,609,97"/><area shape="rect" id="node5" href="classusina_1_1_fluxo.html#af80f13f4ade8128bac424b456ec0836a" title="Atribui um novo valor de vazão ao fluxo. " alt="" coords="458,121,606,148"/><area shape="rect" id="node6" href="classusina_1_1_fluxo.html#a1c204862a651d75929b078355b512823" title="Atribui um número de Reynolds ao fluxo. " alt="" coords="449,172,615,199"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a767621d68cb2ceb8dbbd03bacba8cba5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.Fluxo.getPotencia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a potência gerada pelo fluxo na turbina. </p>
+<p>Método de atalho para <a class="el" href="classusina_1_1_turbina.html#ab5f2692c54cf1e3fe6b30adc3b481710">Turbina#getPotencia(usina.Fluxo)</a>, tendo esse fluxo como parâmetro. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Potência da turbina. </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="classusina_1_1_turbina.html#ab5f2692c54cf1e3fe6b30adc3b481710" title="Calcula a potência gerada da turbina dado um fluxo. ">Turbina::getPotencia</a>(<a class="el" href="classusina_1_1_fluxo.html" title="Fluxo. ">usina.Fluxo</a>) </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_cgraph.png" border="0" usemap="#classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_cgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_cgraph" id="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_cgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d" title="Recupera a turbina da referência. " alt="" coords="216,5,432,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_icgraph" id="classusina_1_1_fluxo_a767621d68cb2ceb8dbbd03bacba8cba5_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#aa7c07414a1af3c807312950fa5019591" title="usina.Fluxo.toString" alt="" coords="216,5,355,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a110ca81bcee4d7f8f08298b3b9372d21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.Fluxo.getReynolds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupera o número de Reynolds usado. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O número de Reynolds. </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21_icgraph" id="classusina_1_1_fluxo_a110ca81bcee4d7f8f08298b3b9372d21_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="219,5,343,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a61cc464f6926c453c51fcded2d57306d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classusina_1_1_turbina.html">Turbina</a> usina.Fluxo.getTurbinaReferencia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupera a turbina da referência. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>A turbina de Referencia </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d_icgraph" id="classusina_1_1_fluxo_a61cc464f6926c453c51fcded2d57306d_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a767621d68cb2ceb8dbbd03bacba8cba5" title="Retorna a potência gerada pelo fluxo na turbina. " alt="" coords="315,5,477,32"/><area shape="rect" id="node4" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="334,56,458,83"/><area shape="rect" id="node5" href="classusina_1_1operadores_1_1_recombinacao.html#aec7a06aa6a7de39a4407fd230dae656a" title="usina.operadores.Recombinacao.simple\lRecombination" alt="" coords="269,107,523,149"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#aa7c07414a1af3c807312950fa5019591" title="usina.Fluxo.toString" alt="" coords="571,5,709,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0634c81d7575ad63274828d8c40a88e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double usina.Fluxo.getVazao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupera o valor da vazão do fluxo. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Valor da vazão. </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5_icgraph" id="classusina_1_1_fluxo_a0634c81d7575ad63274828d8c40a88e5_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="210,5,334,32"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#aa7c07414a1af3c807312950fa5019591" title="usina.Fluxo.toString" alt="" coords="203,56,341,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c204862a651d75929b078355b512823"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usina.Fluxo.setReynolds </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>reynolds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atribui um número de Reynolds ao fluxo. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O Coeficiente de Reynolds. </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a1c204862a651d75929b078355b512823_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a1c204862a651d75929b078355b512823_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a1c204862a651d75929b078355b512823_icgraph" id="classusina_1_1_fluxo_a1c204862a651d75929b078355b512823_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141" title="Construtor com Reynolds padrão. " alt="" coords="219,5,344,32"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="393,5,517,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bb30b3608a7ab915ff332018a18d81f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usina.Fluxo.setTurbina </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classusina_1_1_turbina.html">Turbina</a>&#160;</td>
+          <td class="paramname"><em>turbinaReferencia</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atribui uma turbina de referência ao fluxo. </p>
+<p>Não deve ser publica, pois o fluxo é semanticamente relacionado a uma turbina. Adicionalmente, essa função não modifica os limites do locus – criados na construção do objeto e não modificáveis. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">turbinaReferencia</td><td>A turbina de referência. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f_icgraph" id="classusina_1_1_fluxo_a3bb30b3608a7ab915ff332018a18d81f_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141" title="Construtor com Reynolds padrão. " alt="" coords="208,5,333,32"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="382,5,506,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af80f13f4ade8128bac424b456ec0836a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void usina.Fluxo.setVazao </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>vazao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atribui um novo valor de vazão ao fluxo. </p>
+<dl class="section since"><dt>Desde</dt><dd>1.0 </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vazao</td><td>Nova vazão.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td><ul>
+<li>
+Se o valor estiver fora dos limites - impostos pela turbina.  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd>LocusReal::setLocus(java.lang.Double) </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a_icgraph.png" border="0" usemap="#classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a_icgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a_icgraph" id="classusina_1_1_fluxo_af80f13f4ade8128bac424b456ec0836a_icgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#ab85463cd78cac200be698b91c6be1141" title="Construtor com Reynolds padrão. " alt="" coords="203,5,328,32"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a9749f0c9449677337f81f1f193d4f564" title="usina.Fluxo.copia" alt="" coords="377,5,501,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7c07414a1af3c807312950fa5019591"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String usina.Fluxo.toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591_cgraph.png" border="0" usemap="#classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591_cgraph" alt=""/></div>
+<map name="classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591_cgraph" id="classusina_1_1_fluxo_aa7c07414a1af3c807312950fa5019591_cgraph">
+<area shape="rect" id="node2" href="classusina_1_1_fluxo.html#a767621d68cb2ceb8dbbd03bacba8cba5" title="Retorna a potência gerada pelo fluxo na turbina. " alt="" coords="192,5,355,32"/><area shape="rect" id="node4" href="classusina_1_1_fluxo.html#a0634c81d7575ad63274828d8c40a88e5" title="Recupera o valor da vazão do fluxo. " alt="" coords="199,56,347,83"/><area shape="rect" id="node3" href="classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d" title="Recupera a turbina da referência. " alt="" coords="403,5,619,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a185fed046eefce4fa8f8bb10fde8296d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double usina.Fluxo.reynolds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad85aeeb220a6c87764d29ce36bb8cc26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Double usina.Fluxo.REYNOLDS_PADRAO = 70000.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee04932f02b1bfad1bf79cc80a1df203"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classusina_1_1_turbina.html">Turbina</a> usina.Fluxo.turbinaReferencia</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li>C:/Users/Victor/workplace/NetBeansProjects/tcc/src/usina/<a class="el" href="_fluxo_8java.html">Fluxo.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceusina.html">usina</a></li><li class="navelem"><a class="el" href="classusina_1_1_fluxo.html">Fluxo</a></li>
+    <li class="footer">Gerado em Segunda, 7 de Julho de 2014 14:15:03 para TCC por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

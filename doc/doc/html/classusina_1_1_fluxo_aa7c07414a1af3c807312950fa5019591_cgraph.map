@@ -1,0 +1,5 @@
+<map id="usina.Fluxo.toString" name="usina.Fluxo.toString">
+<area shape="rect" id="node2" href="$classusina_1_1_fluxo.html#a767621d68cb2ceb8dbbd03bacba8cba5" title="Retorna a potência gerada pelo fluxo na turbina. " alt="" coords="192,5,355,32"/>
+<area shape="rect" id="node4" href="$classusina_1_1_fluxo.html#a0634c81d7575ad63274828d8c40a88e5" title="Recupera o valor da vazão do fluxo. " alt="" coords="199,56,347,83"/>
+<area shape="rect" id="node3" href="$classusina_1_1_fluxo.html#a61cc464f6926c453c51fcded2d57306d" title="Recupera a turbina da referência. " alt="" coords="403,5,619,32"/>
+</map>
