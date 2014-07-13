@@ -26,14 +26,16 @@
  */
 package simulacao;
 
+import ic.populacional.algoritmo.AlgoritmoEvolucionario;
+import ic.populacional.algoritmo.operadores.Gerador;
 import ic.populacional.algoritmos.DE.DE;
 import ic.populacional.algoritmos.DE.motadores.Best;
 import ic.populacional.algoritmos.DE.motadores.MutadorDE;
 import ic.populacional.algoritmos.DE.motadores.Rand;
 import ic.populacional.algoritmos.DE.recombinadores.Binomial;
 import ic.populacional.algoritmos.DE.recombinadores.RecombinadorDE;
-import ic.populacional.algoritmo.AlgoritmoEvolucionario;
-import ic.populacional.algoritmo.operadores.Gerador;
+import java.util.LinkedList;
+import java.util.List;
 import usina.DistribuicaoVazao;
 import usina.PopulacaoDeDistribuicoes;
 import usina.Usina;
@@ -50,7 +52,6 @@ public class Simulacao {
     private final Usina usina;
     private final Integer maxIndividuos;
     private final Integer maxIteInteracoes;
-    private final Integer nExperimentos;
 
     //DE -----
     private final Integer nDiferencas;
@@ -62,8 +63,6 @@ public class Simulacao {
 
     public Simulacao() {
 
-        nExperimentos = 1;
-
         maxIndividuos = 50;
         maxIteInteracoes = 50;
 
@@ -74,25 +73,24 @@ public class Simulacao {
         usina = UsinaFactory.getUsina(UsinaFactory.Usinas.TRESMARIAS);
     }
 
-    class Resultados {
-
-        Long tempoExecucao;
-        DistribuicaoVazao melhorSolucao;
-    }
 
     public static void main(String[] args) {
         Simulacao teste = new Simulacao();
-
-        teste.experimento();
+        List<Resultado> resultados = new LinkedList<>();
+        for(int i=0;i<1000;i++)
+            resultados.add(teste.experimento());
+        
+        System.out.println("Média do tempo de execução:\t"+resultados.stream().mapToDouble(Resultado::getTempoExecucao).average().getAsDouble());
+        System.out.println("Média dos melhores:\t"+resultados.stream().mapToDouble(Resultado::getMelhorSolucao).average().getAsDouble());
     }
 
-    public void experimento() {
+    public Resultado experimento() {
 
         PopulacaoDeDistribuicoes populacao = new PopulacaoDeDistribuicoes(usina, maxIndividuos);
         usina.setMeta(demandaHoraria);
 
         Gerador gerador = new Geracao(usina.getTurbinas());
-        MutadorDE mutador = new Best(nDiferencas, fatorDePertubacao);
+        MutadorDE mutador = new Rand(nDiferencas, fatorDePertubacao);
         RecombinadorDE recombinador = new Binomial(probabilidaDeCrossover);
 
         populacao.setIndividuos(gerador.getNAleatorios(maxIndividuos));
@@ -109,6 +107,6 @@ public class Simulacao {
 
         algoritmo.run();
 
-        System.out.println(algoritmo.relatorio());
+        return new Resultado(algoritmo.getTempoDeExecucaoSeg(),(DistribuicaoVazao)algoritmo.getMelhorSer());
     }
 }
