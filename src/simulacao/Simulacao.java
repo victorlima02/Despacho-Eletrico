@@ -29,9 +29,9 @@ package simulacao;
 import ic.populacional.algoritmo.AlgoritmoEvolucionario;
 import ic.populacional.algoritmo.operadores.Gerador;
 import ic.populacional.algoritmos.DE.DE;
-import ic.populacional.algoritmos.DE.motadores.Best;
-import ic.populacional.algoritmos.DE.motadores.MutadorDE;
-import ic.populacional.algoritmos.DE.motadores.Rand;
+import ic.populacional.algoritmos.DE.mutadores.Best;
+import ic.populacional.algoritmos.DE.mutadores.MutadorDE;
+import ic.populacional.algoritmos.DE.mutadores.Rand;
 import ic.populacional.algoritmos.DE.recombinadores.Binomial;
 import ic.populacional.algoritmos.DE.recombinadores.RecombinadorDE;
 import java.util.LinkedList;
@@ -52,6 +52,7 @@ public class Simulacao {
     private final Usina usina;
     private final Integer maxIndividuos;
     private final Integer maxIteInteracoes;
+    private final Integer nExperimentos;
 
     //DE -----
     private final Integer nDiferencas;
@@ -63,6 +64,8 @@ public class Simulacao {
 
     public Simulacao() {
 
+        nExperimentos = 1000;
+        
         maxIndividuos = 50;
         maxIteInteracoes = 50;
 
@@ -77,11 +80,12 @@ public class Simulacao {
     public static void main(String[] args) {
         Simulacao teste = new Simulacao();
         List<Resultado> resultados = new LinkedList<>();
-        for(int i=0;i<1000;i++)
+        for(int i=0;i<teste.nExperimentos;i++)
             resultados.add(teste.experimento());
         
         System.out.println("Média do tempo de execução:\t"+resultados.stream().mapToDouble(Resultado::getTempoExecucao).average().getAsDouble());
         System.out.println("Média dos melhores:\t"+resultados.stream().mapToDouble(Resultado::getMelhorSolucao).average().getAsDouble());
+        System.out.println("Melhor:\t"+resultados.stream().mapToDouble(Resultado::getMelhorSolucao).max().getAsDouble());
     }
 
     public Resultado experimento() {
