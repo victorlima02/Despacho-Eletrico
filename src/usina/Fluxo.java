@@ -23,7 +23,7 @@
  */
 package usina;
 
-import ic.populacional.seres.reais.LocusReal;
+import ic.ce.seres.reais.LocusReal;
 
 /**
  * Fluxo.

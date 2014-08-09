@@ -23,7 +23,7 @@
  */
 package usina;
 
-import ic.populacional.seres.reais.SerReal;
+import ic.ce.seres.reais.SerReal;
 
 /**
  * Distribuição de vazão.

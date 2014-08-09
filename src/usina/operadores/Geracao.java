@@ -23,8 +23,8 @@
  */
 package usina.operadores;
 
-import ic.populacional.seres.reais.GeradorReal;
-import ic.populacional.utilidades.Aleatorios;
+import ic.ce.seres.reais.GeradorReal;
+import ic.ce.base.utilidades.Aleatorios;
 import java.util.List;
 import usina.DistribuicaoVazao;
 import usina.Fluxo;

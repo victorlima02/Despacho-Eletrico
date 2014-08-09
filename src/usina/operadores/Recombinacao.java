@@ -23,7 +23,7 @@
  */
 package usina.operadores;
 
-import ic.populacional.seres.reais.recombinadores.RecombinadorReal;
+import ic.ce.seres.reais.recombinadores.RecombinadorReal;
 import java.util.ArrayList;
 import java.util.List;
 import usina.DistribuicaoVazao;

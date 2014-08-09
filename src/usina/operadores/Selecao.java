@@ -23,9 +23,9 @@
  */
 package usina.operadores;
 
-import ic.populacional.Ambiente;
-import ic.populacional.Populacao;
-import ic.populacional.algoritmo.operadores.Seletor;
+import ic.ce.base.Ambiente;
+import ic.ce.populacional.Populacao;
+import ic.ce.populacional.algoritmo.operadores.Seletor;
 import java.util.ArrayList;
 import java.util.List;
 import usina.DistribuicaoVazao;

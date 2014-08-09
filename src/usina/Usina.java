@@ -23,7 +23,7 @@
  */
 package usina;
 
-import ic.populacional.Ambiente;
+import ic.ce.base.Ambiente;
 import java.util.Collections;
 import usina.factory.UsinaFactory;
 import usina.tubulacao.Conduto;

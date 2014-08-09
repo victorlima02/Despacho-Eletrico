@@ -23,7 +23,7 @@
  */
 package usina;
 
-import ic.populacional.PopulacaoOrdenada;
+import ic.ce.populacional.PopulacaoOrdenada;
 
 /**
  * População de distribuições.

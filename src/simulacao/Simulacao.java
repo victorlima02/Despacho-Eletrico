@@ -26,14 +26,13 @@
  */
 package simulacao;
 
-import ic.populacional.algoritmo.AlgoritmoEvolucionario;
-import ic.populacional.algoritmo.operadores.Gerador;
-import ic.populacional.algoritmos.DE.DE;
-import ic.populacional.algoritmos.DE.mutadores.Best;
-import ic.populacional.algoritmos.DE.mutadores.MutadorDE;
-import ic.populacional.algoritmos.DE.mutadores.Rand;
-import ic.populacional.algoritmos.DE.recombinadores.Binomial;
-import ic.populacional.algoritmos.DE.recombinadores.RecombinadorDE;
+import ic.ce.populacional.algoritmo.AlgoritmoPopulacional;
+import ic.ce.base.algoritmo.operadores.Gerador;
+import ic.ce.populacional.algoritmos.DE.DE;
+import ic.ce.populacional.algoritmos.DE.mutadores.MutadorDE;
+import ic.ce.populacional.algoritmos.DE.mutadores.Rand;
+import ic.ce.populacional.algoritmos.DE.recombinadores.Binomial;
+import ic.ce.populacional.algoritmos.DE.recombinadores.RecombinadorDE;
 import java.util.LinkedList;
 import java.util.List;
 import usina.DistribuicaoVazao;
@@ -60,7 +59,7 @@ public class Simulacao {
     private final Double probabilidaDeCrossover;  //0,5:0,8
     //----
 
-    Double demandaHoraria = 320d;
+    private final Double demandaHoraria;
 
     public Simulacao() {
 
@@ -74,6 +73,7 @@ public class Simulacao {
         nDiferencas = 1;
 
         usina = UsinaFactory.getUsina(UsinaFactory.Usinas.TRESMARIAS);
+        demandaHoraria = 320d;
     }
 
 
@@ -99,7 +99,7 @@ public class Simulacao {
 
         populacao.setIndividuos(gerador.getNAleatorios(maxIndividuos));
 
-        AlgoritmoEvolucionario algoritmo = new DE();
+        AlgoritmoPopulacional algoritmo = new DE();
 
         algoritmo.setAmbiente(usina);
         algoritmo.setPopulacao(populacao);

@@ -23,7 +23,7 @@
  */
 package usina.operadores;
 
-import ic.populacional.seres.reais.mutadores.MutadorReal;
+import ic.ce.seres.reais.mutadores.MutadorReal;
 import usina.DistribuicaoVazao;
 
 /**
